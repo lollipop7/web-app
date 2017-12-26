@@ -1,0 +1,43 @@
+<% include ../components/head.ejs%>
+<body>
+<!-- 全屏幕模式的状态栏(PhoneGap) -->
+<div class="statusbar-overlay"></div>
+<!-- 视图-->
+<div class="views">
+    <!-- 主视图，必须有 "view-main" 类名 -->
+    <div class="view view-main">
+        <!-- 顶部导航栏-->
+        <div class="navbar">
+            <div class="navbar-inner">
+                <!-- 标题内元素如果需要移入移出的动画效果，添加"sliding"类，通常情况下，返回箭头无需添加动画，标题可以选择性添加，如不添加效果为淡入淡出。-->
+                <div class="center sliding">标题</div>
+            </div>
+        </div>
+        <!-- 页面的容器，因为我们使用固定的导航栏和工具栏，需要添加"navbar-through"、"toolbar-through"类-->
+        <div class="pages navbar-through toolbar-through">
+            <!-- 页面, "data-page"包含了页面名，属性值里不能带横线"-"。-->
+            <div data-page="index" class="page">
+                <!-- 滚动页面内容 -->
+                <div class="page-content">
+                    <p>Page content goes here</p>
+                    <!-- 链接到其他页，这里需要注意的是，framework7里面的a标签经过了特殊处理，如果是链接到外部页面，下载文件，或触发JS函数等，需要添加“external”类，已脱离框架默认设置-->
+                    <a href="resume.html">About app</a>
+                </div>
+            </div>
+        </div>
+        <!-- 底部工具栏-->
+        <div class="toolbar">
+            <div class="toolbar-inner">
+                <!-- 工具栏链接 -->
+                <a href="#" class="link">Link 1</a>
+                <a href="#" class="link">Link 2</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Path to Framework7 Library JS-->
+<script type="text/javascript" src="framework7/js/framework7.min.js"></script>
+<!-- Path to your app js-->
+<script type="text/javascript" src="js/my-app.js"></script>
+</body>
+</html>

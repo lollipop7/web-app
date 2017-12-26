@@ -11,8 +11,11 @@
     "**/.*",
     "node_modules",
     "bower_components",
-    "app/components/",
+    "vendor",
     "test",
     "tests"
-  ]
+  ],
+  "dependencies": {
+    "framework7": "^2.0.2"
+  }
 }
