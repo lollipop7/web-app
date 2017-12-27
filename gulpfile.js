@@ -4,6 +4,7 @@
 const fs = require('fs'),
     join = require('path').join,
     gulp = require('gulp'),
+    gulpif   = require('gulp-if'),
     ejs = require('ejs'),
     $ = require('gulp-load-plugins')(),
     //src folder
@@ -27,7 +28,7 @@ let ejsFileName = 'index';
  返回当前命令行指令参数 ，但不包括node特殊(node-specific) 的命令行选项（参数）。
  常规第一个元素会是 'node'， 第二个元素将是 .Js 文件的名称。接下来的元素依次是命令行传入的参数：
  */
-let fileArray = ['resume','interview','corpdetail','jobinfo','newsdetail'];
+let fileArray = ['corpdetail','duty','index','jobinfo','resume','send-interview','cancel-interview','corprecru'];
 //compile ejs to html
 gulp.task('tpl',() => {
     _.each(fileArray,ejsFileName=>{
@@ -36,10 +37,27 @@ gulp.task('tpl',() => {
                 filename:join(ejsDir,`${ejsFileName}/head.ejs`),
                 data:_.extend({},require(join(srcDir,`data/data.js`)),{filename:ejsFileName})
             });
-        fs.writeFile(join(srcDir,`www/${ejsFileName}.html`),htmlTemplate,err => {
-            if(err) throw new Error(err);
-            console.log(`${ejsFileName} is saved`);
-        });
+        let destDir = '';
+        switch(`${ejsFileName}`){
+            case `send-interview`:
+                destDir = `www/interview/sendInterView/detail.html`;
+                break;
+            case `cancel-interview`:
+                destDir = `www/interview/cancelInterView/cancel.html`;
+                break;
+            case `corprecru`:
+                destDir = `www/corprecru/dream.html`;
+                break;
+            default:
+                destDir = `www/${ejsFileName}.html`;
+        };
+        fs.writeFile(
+            join(srcDir, destDir)
+            ,htmlTemplate,err => {
+                if(err) throw new Error(err);
+                console.log(`${ejsFileName} is saved`);
+            });
+
     });
 
 });
@@ -56,7 +74,7 @@ gulp.task('sass',() => {
             .pipe($.sass().on('error',$.sass.logError))
             //生成sourcemap文件
             .pipe($.sourcemaps.write())
-            .pipe(gulp.dest(join(srcDir,'www/styles/')));
+            .pipe(gulp.dest(join(srcDir,'www/css/')));
     });
 });
 //sass watch
@@ -68,19 +86,19 @@ gulp.task('sass:watch',()=> {
  * 图片base64
  */
 gulp.task('base64', () => {
-    return gulp.src(join(wwwDir, 'styles', '*.css'))
+    return gulp.src(join(wwwDir, 'css', '*.css'))
         .pipe($.base64({
             extensions: ['svg', 'png', '\.jpg#datauri$/i'],
             maxImageSize: 15*1024,
             deleteAfterEncoding: false,
             debug: true
         }))
-        .pipe(gulp.dest('./src/www/styles'));
+        .pipe(gulp.dest('./src/www/css'));
 });
 
 //compile base64 watch
 gulp.task('base64:watch', () => {
-    gulp.watch(join(wwwDir, 'styles', 'index.css'), ['base64'])
+    gulp.watch(join(wwwDir, 'css', 'index.css'), ['base64'])
 });
 
 //js

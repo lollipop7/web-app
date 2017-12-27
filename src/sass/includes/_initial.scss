@@ -45,4 +45,24 @@ body {
 
 a {
   text-decoration: none;
+  &:hover, &:visited {
+    text-decoration: none;
+  }
+}
+.pull-left {
+  float: left;
+}
+.pull-right {
+  float: right;
+}
+.clearfix:after {content:""; display:block; height:0; clear:both; }
+
+.table {
+  display: table;
+}
+.table-cell {
+  display: table-cell;
+}
+.inline-block {
+  display: inline-block;
 }

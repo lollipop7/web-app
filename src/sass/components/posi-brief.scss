@@ -1,0 +1,109 @@
+//Created by lollipop 2017/12/27
+.posi-brief {
+  font-size: 0;
+  .out-box {
+    background-color: #fff;
+    .wrap {
+      &:after {
+      @include border-bottom;
+    }
+      position: relative;
+    }
+    header {
+      margin-bottom: 0.04rem;
+      h2 {
+        line-height: 0.2rem;
+        font-family: PingFangSC-Medium;
+        font-size: 0.16rem;
+        font-weight: bold;
+        color: #333333;
+      }
+    }
+    .posi-info {
+      span,b {
+        line-height: 0.14rem;
+        font-family: PingFangSC-Regular;
+        font-size: 0.12rem;
+        color: #a0a0a0;
+      }
+      b {
+        padding: 0 0.05rem;
+      }
+    }
+    .benifit {
+      font-size: 0;
+      padding: 0.1rem 0 0.14rem;
+      div {
+        margin-right: 0.05rem;
+        padding: 0.03rem 0.07rem;
+        border: 0.01rem solid #ff9e00;
+        border-radius: 20%;
+        font-family: PingFangSC-Regular;
+        font-size: 0.12rem;
+        color: #ff9e00;
+      }
+    }
+    .salary {
+      position: absolute;
+      top: 0;
+      right: 0;
+      font-size: 0.14rem;
+      color: $theme-color;
+    }
+  }
+  .corp-wrap {
+    position: relative;
+    padding-top: 0.14rem;
+    .corp-info {
+      display: flex;
+      justify-content: flex-start;
+      .logo {
+        padding-right: 0.08rem;
+        .mask {
+          width: 0.46rem;
+          height: 0.46rem;
+          background-color: #d7d7d7;
+        }
+        img {
+          width: 0.4rem;
+          height: 0.4rem;
+        }
+      }
+    }
+    .corporation {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      .cor-name {
+
+        line-height: 0.17rem;
+        font-family: PingFangSC-Regular;
+        font-size: 0.14rem;
+        color: #656565;
+      }
+      .scale {
+        line-height: 0.14rem;
+        font-family: PingFangSC-Regular;
+        font-size: 0.12rem;
+        color: #a0a0a0;
+      }
+    }
+    .arrow-box {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      right:0;
+      width: 0.4rem;
+      height: 0.4rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      .arrow-right {
+        align-self: flex-end;
+        width: 0.04rem;
+        height: 0.08rem;
+        background-color: #a0a0a0;
+      }
+    }
+  }
+}

@@ -1,0 +1,101 @@
+<!Doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="Author" content="lollipop">
+    <title>index</title>
+    <link rel="stylesheet" href="css/index.css">
+    <script type="text/javascript" src="js/jquery-1.9.1.js"></script>
+    <script>!function(e){function t(a){if(i[a])return i[a].exports;var n=i[a]={exports:{},id:a,loaded:!1};return e[a].call(n.exports,n,n.exports,t),n.loaded=!0,n.exports}var i={};return t.m=e,t.c=i,t.p="",t(0)}([function(e,t){"use strict";Object.defineProperty(t,"__esModule",{value:!0});var i=window;t["default"]=i.flex=function(normal,e,t){var a=e||100,n=t||1,r=i.document,o=navigator.userAgent,d=o.match(/Android[\S\s]+AppleWebkit\/(\d{3})/i),l=o.match(/U3\/((\d+|\.){5,})/i),c=l&&parseInt(l[1].split(".").join(""),10)>=80,p=navigator.appVersion.match(/(iphone|ipad|ipod)/gi),s=i.devicePixelRatio||1;p||d&&d[1]>534||c||(s=1);var u=normal?1:1/s,m=r.querySelector('meta[name="viewport"]');m||(m=r.createElement("meta"),m.setAttribute("name","viewport"),r.head.appendChild(m)),m.setAttribute("content","width=device-width,user-scalable=no,initial-scale="+u+",maximum-scale="+u+",minimum-scale="+u),r.documentElement.style.fontSize=normal?"50px": a/2*s*n+"px"},e.exports=t["default"]}]);  flex(false,200, 1);</script>
+</head>
+
+<body>
+<div class="interview-page">
+    <div id="loadingzzz" class="loading"></div>
+<section>
+    <ul id="lis" class="Tor1">
+
+    </ul>
+
+</section>
+<script>
+    var PR ="http://"+window.location.host+"/";
+    $(document).ready(function(){
+        $("#loadingzzz").show();
+        $.ajax({
+            type: "POST",
+            url: PR+"/emobile/duty/index.html",
+            contentType: "application/json",
+            data: JSON.stringify({
+                "head": {
+                    "transcode": "DC001",
+                    "type": "h"
+                },
+                "data": {
+                    "groupcode": "DICT_JOB_WEAL",
+                    "selAll": "true"
+                }
+            }),
+            dataType: "json",
+            success: function (data) {
+                console.log(data)
+                $.each(data.data,function(i,item){
+                    // alert(JSON.stringify(item));
+                    if(item.value.indexOf('all') < 0 ){
+
+                        $("#lis").append("<li><a >"+item.value+"</a></li>");
+                    }
+                    //alert(item.label);
+                    /**
+                     $("#art").append("<nav>");
+                     $.each(item.listshow,function(i,items){
+										 $("#art").append(" <a href="../duty/duty.html">"+items.job_show_name+"</a> | ");
+									 }
+                     $("#art").append("</nav>");
+                     */
+
+                });
+                $('li').each(function(index) {
+                    if(typeof($(this).attr("falg")) == "undefined"){
+                        $(this).attr("falg","true");
+                    }
+                    $(this).click(function(){
+                        if($(this).attr("falg") == "true"){//1 no
+                            $(this).attr("falg","false");
+                            $(this).attr("class","Tor");
+                            var welfare = "";
+                            $('.Tor').each(function(index) {
+                                if(!welfare == ""){
+                                    welfare=welfare+",";
+                                }
+                                welfare=welfare+$(this).text();
+                            });
+                            window.location.href='#?welfare='+welfare;
+                        }else{// 2  yes
+                            $(this).attr("falg","true");
+                            $(this).attr("class","");
+                            var welfare = "";
+                            $('.Tor').each(function(index) {
+                                if(!welfare == ""){
+                                    welfare=welfare+",";
+                                }
+                                welfare=welfare+$(this).text();
+                            });
+                            window.location.href='#?welfare='+welfare;
+                        }
+
+                    })
+                });
+                $("#loadingzzz").hide();
+            },
+            error: function (data) {
+                TINY.box.show(JSON.stringify(data),0,0,0,0,3)
+            }
+        });
+
+
+    });
+</script>
+</div>
+</body>
+</html>
