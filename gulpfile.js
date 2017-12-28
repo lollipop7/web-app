@@ -4,7 +4,6 @@
 const fs = require('fs'),
     join = require('path').join,
     gulp = require('gulp'),
-    gulpif   = require('gulp-if'),
     ejs = require('ejs'),
     $ = require('gulp-load-plugins')(),
     //src folder
@@ -112,9 +111,27 @@ gulp.task('js',()=> {
 gulp.task('js:watch',()=> {
     gulp.watch(join(srcDir,'script/*.js'),['js']);
 });
+
 //web server
 gulp.task('ws',['sass:watch','tpl:watch','js:watch','base64:watch'],() => {
 
+});
+
+var browserSync = require('browser-sync').create();
+gulp.task('watch:html:css:js', function () {
+    browserSync.init({
+        files: ['**/*.html','**/*.css','**/*.js'],
+        server: {
+            baseDir: './src/www/'
+        },
+        ghostMode: {
+            click: true,
+            scroll: true
+        },
+        logPrefix: "real-time",
+        browser: ['chrome'],
+        port:8080
+    })
 });
 
 
