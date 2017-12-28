@@ -1,17 +1,4 @@
-<!Doctype html>
-<html lang="en">
-<head>
-    <meta charset="utf-8">
-    <meta name="Author" content="lollipop">
-    <title>corpdetail</title>
-    <link rel="stylesheet" href="css/corpdetail.css">
-    <script type="text/javascript" src="js/jquery-1.9.1.js"></script>
-    <script>!function(e){function t(a){if(i[a])return i[a].exports;var n=i[a]={exports:{},id:a,loaded:!1};return e[a].call(n.exports,n,n.exports,t),n.loaded=!0,n.exports}var i={};return t.m=e,t.c=i,t.p="",t(0)}([function(e,t){"use strict";Object.defineProperty(t,"__esModule",{value:!0});var i=window;t["default"]=i.flex=function(normal,e,t){var a=e||100,n=t||1,r=i.document,o=navigator.userAgent,d=o.match(/Android[\S\s]+AppleWebkit\/(\d{3})/i),l=o.match(/U3\/((\d+|\.){5,})/i),c=l&&parseInt(l[1].split(".").join(""),10)>=80,p=navigator.appVersion.match(/(iphone|ipad|ipod)/gi),s=i.devicePixelRatio||1;p||d&&d[1]>534||c||(s=1);var u=normal?1:1/s,m=r.querySelector('meta[name="viewport"]');m||(m=r.createElement("meta"),m.setAttribute("name","viewport"),r.head.appendChild(m)),m.setAttribute("content","width=device-width,user-scalable=no,initial-scale="+u+",maximum-scale="+u+",minimum-scale="+u),r.documentElement.style.fontSize=normal?"50px": a/2*s*n+"px"},e.exports=t["default"]}]);  flex(false,200, 1);</script>
-</head>
-
-<body>
-<div class="corpdetail-page">
-    <div>
+<div>
     <div class="corp-flag">
         <div class="logo">
         </div>
@@ -77,37 +64,7 @@
     <div class="corp-posts">
         <div class="inner-box">
             <h3>该公司发布的所有职位</h3>
-            <div class="postbox">
-    <h2 >
-       <span class="postname">
-            金融顾问
-       </span>
-    </h2>
-    div.
-    <div class="post-info">
-        <span class="post-city">
-            金融顾问
-        </span>
-        <b>|</b>
-        <span class="post-section">
-            上海伊尔哈有限公司
-        </span>
-        <b>|</b>
-        <span class="post-workyears">
-            5年以上
-        </span>
-        <b>|</b>
-        <span class="post-edu">
-            本科
-        </span>
-    </div>
-    <div class="salary">
-        10-15k
-    </div>
-</div>
+            <% include postbox.ejs %>
         </div>
     </div>
 </div>
-</div>
-</body>
-</html>

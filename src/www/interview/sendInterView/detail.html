@@ -23,19 +23,19 @@
                     </h2>
                 </header>
                 <div class="posi-info">
-                    <span id="city">
+                    <span id="posi-city">
                         上海
                     </span>
                     <b>|</b>
-                    <span id="section">
+                    <span id="posi-section">
                         浦东新区
                     </span>
                     <b>|</b>
-                    <span id="workyears">
+                    <span id="posi-workyears">
                         5年以上
                     </span>
                     <b>|</b>
-                    <span id="edu">
+                    <span id="posi-edu">
                         本科
                     </span>
                 </div>
@@ -125,7 +125,8 @@
     </div>
 </div>
 <script type="text/javascript">
-    var PR ="http://"+window.location.host+"/";
+//    var PR ="http://"+window.location.host+"/";
+    var PR ="http://192.168.1.251:6688";
     $(document).ready(function() {
         var url = PR+" /emobile/duty/interview/sendInterView/detail.html";
         $("#loadingzzz").show();
