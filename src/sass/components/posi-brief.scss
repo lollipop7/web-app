@@ -1,6 +1,7 @@
 //Created by lollipop 2017/12/27
 .posi-brief {
   font-size: 0;
+  -webkit-text-size-adjust:none;
   .out-box {
     background-color: #fff;
     .wrap {
@@ -53,7 +54,7 @@
   }
   .corp-wrap {
     position: relative;
-    padding-top: 0.14rem;
+    margin-top: 0.14rem;
     .corp-info {
       display: flex;
       justify-content: flex-start;
@@ -90,8 +91,7 @@
     }
     .arrow-box {
       position: absolute;
-      top: 50%;
-      transform: translateY(-50%);
+      top:0;
       right:0;
       width: 0.4rem;
       height: 0.4rem;
@@ -100,9 +100,12 @@
       justify-content: center;
       .arrow-right {
         align-self: flex-end;
-        width: 0.04rem;
-        height: 0.08rem;
-        background-color: #a0a0a0;
+        &:after {
+          display: block;
+          width: 0.1rem;
+          height: 0.16rem;
+          content: url(../img/next-page.png);
+        }
       }
     }
   }

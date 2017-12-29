@@ -3,7 +3,7 @@
   .corp-flag {
     padding: 0.2rem 0;
     text-align: center;
-    background-color: #fff;
+    background-color: $bg-color;
     font-size: 0;
     .logo {
       margin: 0 auto;
@@ -25,10 +25,88 @@
       color: #a0a0a0;
     }
   }
-  .video-wrap {
-    video {
+  .corp-video {
+    margin-top: 0.1rem;
+    background-color: $bg-color;
+    .video-wrap {
       width: 100%;
       height: 1.52rem;
+      video {
+        object-fit: contain;
+        width: 100%;
+        height: 100%;
+        display: block;
+      }
     }
+    .corp-video-name {
+      text-align: center;
+      line-height: 0.14rem;
+      font-family: PingFangSC-Regular;
+      font-size: 0.12rem;
+      color: #656565;
+    }
+  }
+  h3.subtitle {
+    position: relative;
+    &:after {
+      @include border-bottom;
+    }
+    padding-bottom: 0.12rem;
+    line-height: 0.2rem;
+    font-family: PingFangSC-Medium;
+    font-size: 0.16rem;
+    color: #656565;
+  }
+  .corp-brief {
+    margin-top: 0.1rem;
+    background-color: $bg-color;
+    .corp-intro {
+      position: relative;
+      &:after {
+        @include border-bottom;
+      }
+      padding: 0.09rem 0;
+      line-height: 0.2rem;
+      font-family: PingFangSC-Regular;
+      font-size: 0.14rem;
+      color: #656565;
+    }
+    .show-more {
+      display: block;
+      outline: 0 none;
+      -webkit-appearance: none;
+      -webkit-box-sizing: border-box;
+      box-sizing: border-box;
+      padding: 0;
+      text-align: center;
+      font-size: 0.14rem;
+      height: 0.2rem;
+      line-height: 0.2rem;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      word-wrap: break-word;
+      white-space: nowrap;
+      color: #000;
+      background-color: $bg-color;
+      i {
+        display: inline-flex;
+        flex-direction: column;
+        justify-content: center;
+        &:after {
+          display: block;
+          width: 0.16rem;
+          height: 0.1rem;
+          content: url(../img/triangle.png);
+        }
+      }
+    }
+  }
+  .corp-addr {
+    margin-top: 0.1rem;
+    background-color: $bg-color;
+  }
+  .corp-posts {
+    margin-top: 0.1rem;
+    background-color: $bg-color;
   }
 }

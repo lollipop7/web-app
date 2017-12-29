@@ -26,8 +26,13 @@
             <div class="video-wrap">
                 <video
                        controls
+                        <% <!--全屏设置，设置为 true 是防止横屏--> %>
+                       x5-video-player-fullscreen="true"
+                       x-webkit-airplay="true"
+                       webkit-playsinline="true"
                 >
-                    <source src="./video/vv.mp4#t=5,10" type="video/mp4">
+                    <source src="./video/vv.mp4#t=5,10" type="video/mp4"
+                    />
                     <p>您的浏览器不支持video元素.</p>
                 </video>
             </div>
@@ -38,20 +43,24 @@
     </div>
     <div class="corp-brief">
         <div class="inner-box">
-            <h3>公司简介</h3>
+            <h3 class="subtitle">公司简介</h3>
             <div class="corp-intro">
                 <p id="intro-brief">
                     51金融圈（51jrq）是中国的一家基于互联网科技的金融行业人才咨询公司，设立于2014年位于上海陆家嘴金融聚集地。
                 </p>
-                <button id="show-more">
-                    查看更多
-                </button>
             </div>
+            <a id="show-more"
+               class="show-more"
+               href="javascript:void(0)"
+            >
+                <span>查看更多</span>
+                <i class="inline-block"></i>
+            </a>
         </div>
     </div>
     <div class="corp-addr">
         <div class="inner-box">
-            <h3>公司地址</h3>
+            <h3 class="subtitle">公司地址</h3>
             <div class="addr-info">
                 <span class="inline-block addr-info-icon"></span>
                 <span id="corp-addr">
@@ -63,7 +72,7 @@
     </div>
     <div class="corp-posts">
         <div class="inner-box">
-            <h3>该公司发布的所有职位</h3>
+            <h3 class="subtitle">该公司发布的所有职位</h3>
             <% include postbox.ejs %>
         </div>
     </div>
