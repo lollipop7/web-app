@@ -3,15 +3,12 @@
   <component name="ChangeListManager">
     <list default="true" id="ec3d8592-0f67-482c-acfb-12b481301e42" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ejs/components/posi-brief.ejs" afterPath="$PROJECT_DIR$/src/ejs/components/posi-brief.ejs" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ejs/corpdetail/module.ejs" afterPath="$PROJECT_DIR$/src/ejs/corpdetail/module.ejs" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/sass/components/posi-brief.scss" afterPath="$PROJECT_DIR$/src/sass/components/posi-brief.scss" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/sass/corpdetail/module.scss" afterPath="$PROJECT_DIR$/src/sass/corpdetail/module.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/sass/includes/_variable.scss" afterPath="$PROJECT_DIR$/src/sass/includes/_variable.scss" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/www/corpdetail.html" afterPath="$PROJECT_DIR$/src/www/corpdetail.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/www/css/corpdetail.css" afterPath="$PROJECT_DIR$/src/www/css/corpdetail.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/www/css/send-interview.css" afterPath="$PROJECT_DIR$/src/www/css/send-interview.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/www/interview/sendInterView/detail.html" afterPath="$PROJECT_DIR$/src/www/interview/sendInterView/detail.html" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -38,8 +35,8 @@
       <file leaf-file-name="module.ejs" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/ejs/corpdetail/module.ejs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="441">
-              <caret line="72" column="26" lean-forward="false" selection-start-line="72" selection-start-column="16" selection-end-line="72" selection-end-column="26" />
+            <state relative-caret-position="243">
+              <caret line="65" column="21" lean-forward="true" selection-start-line="65" selection-start-column="21" selection-end-line="65" selection-end-column="23" />
               <folding />
             </state>
           </provider>
@@ -48,8 +45,28 @@
       <file leaf-file-name="module.scss" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/sass/corpdetail/module.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="348">
-              <caret line="53" column="28" lean-forward="false" selection-start-line="53" selection-start-column="28" selection-end-line="53" selection-end-column="28" />
+            <state relative-caret-position="495">
+              <caret line="117" column="57" lean-forward="true" selection-start-line="117" selection-start-column="57" selection-end-line="117" selection-end-column="57" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="posi-brief.ejs" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/ejs/components/posi-brief.ejs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="21">
+              <caret line="46" column="33" lean-forward="false" selection-start-line="46" selection-start-column="24" selection-end-line="46" selection-end-column="33" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="posi-brief.scss" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/sass/components/posi-brief.scss">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="426">
+              <caret line="108" column="5" lean-forward="false" selection-start-line="90" selection-start-column="4" selection-end-line="108" selection-end-column="5" />
               <folding />
             </state>
           </provider>
@@ -113,6 +130,7 @@
       <find>corp--wrap</find>
       <find>url</find>
       <find>styles</find>
+      <find>corp-wrap</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -245,7 +263,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -399,6 +416,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scratches" />
       <pane id="Scope" />
     </panes>
   </component>
@@ -481,12 +499,13 @@
       <workItem from="1514279104873" duration="4297000" />
       <workItem from="1514337059474" duration="28396000" />
       <workItem from="1514423914799" duration="15225000" />
-      <workItem from="1514509683847" duration="11955000" />
+      <workItem from="1514509683847" duration="12563000" />
+      <workItem from="1514793358017" duration="7598000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="74455000" />
+    <option name="totallyTimeSpent" value="82661000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -501,8 +520,8 @@
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Gulp" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21654373" sideWeight="0.539557" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21654373" sideWeight="0.46044305" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Gulp" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21654373" sideWeight="0.5458861" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21654373" sideWeight="0.45411393" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32936078" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
@@ -785,14 +804,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/ejs/corpdetail/postbox.ejs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="8" column="32" lean-forward="false" selection-start-line="8" selection-start-column="32" selection-end-line="8" selection-end-column="32" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/sass/includes/_public.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="21">
@@ -817,22 +828,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/sass/components/posi-brief.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="399">
-          <caret line="106" column="46" lean-forward="false" selection-start-line="106" selection-start-column="46" selection-end-line="106" selection-end-column="46" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ejs/components/posi-brief.ejs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="348">
-          <caret line="68" column="32" lean-forward="false" selection-start-line="68" selection-start-column="32" selection-end-line="68" selection-end-column="32" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/sass/corpdetail/corpdetail.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
@@ -849,18 +844,42 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/ejs/corpdetail/postbox.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="8" column="32" lean-forward="false" selection-start-line="8" selection-start-column="32" selection-end-line="8" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ejs/components/posi-brief.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="21">
+          <caret line="46" column="33" lean-forward="false" selection-start-line="46" selection-start-column="24" selection-end-line="46" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sass/components/posi-brief.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="426">
+          <caret line="108" column="5" lean-forward="false" selection-start-line="90" selection-start-column="4" selection-end-line="108" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/ejs/corpdetail/module.ejs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="441">
-          <caret line="72" column="26" lean-forward="false" selection-start-line="72" selection-start-column="16" selection-end-line="72" selection-end-column="26" />
+        <state relative-caret-position="243">
+          <caret line="65" column="21" lean-forward="true" selection-start-line="65" selection-start-column="21" selection-end-line="65" selection-end-column="23" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/sass/corpdetail/module.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="348">
-          <caret line="53" column="28" lean-forward="false" selection-start-line="53" selection-start-column="28" selection-end-line="53" selection-end-column="28" />
+        <state relative-caret-position="495">
+          <caret line="117" column="57" lean-forward="true" selection-start-line="117" selection-start-column="57" selection-end-line="117" selection-end-column="57" />
           <folding />
         </state>
       </provider>

@@ -104,9 +104,25 @@
   .corp-addr {
     margin-top: 0.1rem;
     background-color: $bg-color;
+    .addr-info {
+      display: flex;
+      justify-content: space-around;
+      .addr-detail {
+        line-height: 0.18rem;
+        font-family: PingFangSC-Regular;
+        font-size: 0.14rem;
+        color: #5e5e5e;
+        .icon-addr {
+          width: 0.12rem;
+          height: 0.18rem;
+          background: url(../img/map-icon.png) no-repeat;
+        }
+      }
+    }
   }
   .corp-posts {
     margin-top: 0.1rem;
     background-color: $bg-color;
+
   }
 }
