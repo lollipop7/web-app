@@ -2,3 +2,14 @@
 .inner-box {
   padding: 0.14rem;
 }
+h3.subtitle {
+  position: relative;
+  &:after {
+    @include border-bottom;
+  }
+  padding-bottom: 0.12rem;
+  line-height: 0.2rem;
+  font-family: PingFangSC-Medium;
+  font-size: 0.16rem;
+  color: #656565;
+}

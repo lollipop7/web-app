@@ -27,7 +27,7 @@ let ejsFileName = 'index';
  返回当前命令行指令参数 ，但不包括node特殊(node-specific) 的命令行选项（参数）。
  常规第一个元素会是 'node'， 第二个元素将是 .Js 文件的名称。接下来的元素依次是命令行传入的参数：
  */
-let fileArray = ['corpdetail','duty','index','jobinfo','resume','send-interview','cancel-interview','corprecru'];
+let fileArray = ['corpdetail','duty','index','jobinfo','resume','send-interview','cancel-interview','corprecru','news'];
 //compile ejs to html
 gulp.task('tpl',() => {
     _.each(fileArray,ejsFileName=>{

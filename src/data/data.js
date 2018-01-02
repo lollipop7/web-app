@@ -2,7 +2,7 @@
  * Created by lollipop on 2017/12/26
  */
 module.exports = {
-    navName: [
+    pageTitle: [
         {name: '简历详情'},
         {name: '面试邀请'},
         {name: '企业详情'},

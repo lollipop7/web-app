@@ -46,17 +46,6 @@
       color: #656565;
     }
   }
-  h3.subtitle {
-    position: relative;
-    &:after {
-      @include border-bottom;
-    }
-    padding-bottom: 0.12rem;
-    line-height: 0.2rem;
-    font-family: PingFangSC-Medium;
-    font-size: 0.16rem;
-    color: #656565;
-  }
   .corp-brief {
     margin-top: 0.1rem;
     background-color: $bg-color;
@@ -97,25 +86,6 @@
           width: 0.16rem;
           height: 0.1rem;
           content: url(../img/triangle.png);
-        }
-      }
-    }
-  }
-  .corp-addr {
-    margin-top: 0.1rem;
-    background-color: $bg-color;
-    .addr-info {
-      display: flex;
-      justify-content: space-around;
-      .addr-detail {
-        line-height: 0.18rem;
-        font-family: PingFangSC-Regular;
-        font-size: 0.14rem;
-        color: #5e5e5e;
-        .icon-addr {
-          width: 0.12rem;
-          height: 0.18rem;
-          background: url(../img/map-icon.png) no-repeat;
         }
       }
     }

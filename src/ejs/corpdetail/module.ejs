@@ -58,22 +58,11 @@
             </a>
         </div>
     </div>
-    <div class="corp-addr">
-        <div class="inner-box">
-            <h3 class="subtitle">公司地址</h3>
-            <div class="addr-info">
-                <span  class="addr-detail">
-                    <em class="icon-addr"></em>
-                    上海市浦东新区东方路999号9楼909
-                </span>
-                <span class="arrow-right"></span>
-            </div>
-        </div>
-    </div>
+    <% include ../components/corp-addr.ejs %>
     <div class="corp-posts">
         <div class="inner-box">
             <h3 class="subtitle">该公司发布的所有职位</h3>
-            <% include postbox.ejs %>
+            <% include ../components/postbox.ejs %>
         </div>
     </div>
 </div>

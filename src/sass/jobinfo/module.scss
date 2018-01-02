@@ -1,0 +1,19 @@
+//Created by lollipop 2018/1/2
+.jobinfo-page {
+  .job-desc {
+    margin-top: 0.1rem;
+    background-color: $bg-color;
+    line-height: 0.2rem;
+    font-family: PingFangSC-Regular;
+    font-size: 0.14rem;
+    color: #656565;
+    .job-duty {
+      margin-top: 0.12rem;
+      margin-bottom: 0.28rem;
+    }
+  }
+  .job-prom {
+    margin-top: 0.1rem;
+    background-color: $bg-color;
+  }
+}

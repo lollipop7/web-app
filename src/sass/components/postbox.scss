@@ -1,0 +1,39 @@
+//Created by lollipop 2018/1/2
+.postbox {
+  padding: 0.14rem 0;
+  font-size: 0;
+  -webkit-text-size-adjust:none;
+  position: relative;
+  h2 {
+    line-height: 0.2rem;
+    font-family: PingFangSC-Medium;
+    font-size: 0.16rem;
+    font-weight: bold;
+    color: #333333;
+  }
+  .corpname {
+    padding: 0.06rem 0;
+    line-height: 0.18rem;
+    font-family: PingFangSC-Regular;
+    font-size: 0.14rem;
+    color: #656565;
+  }
+  .post-info {
+    span,b {
+      line-height: 0.14rem;
+      font-family: PingFangSC-Regular;
+      font-size: 0.12rem;
+      color: #a0a0a0;
+    }
+    b {
+      padding: 0 0.05rem;
+    }
+  }
+  .salary {
+    position: absolute;
+    top: 0.14rem;
+    right: 0;
+    font-size: 0.14rem;
+    color: $theme-color;
+  }
+}

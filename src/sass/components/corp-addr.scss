@@ -1,0 +1,33 @@
+//Created by lollipop 2018/1/2
+.corp-addr {
+  margin-top: 0.1rem;
+  background-color: $bg-color;
+  .addr-info {
+    position: relative;
+    display: flex;
+    justify-content: flex-start;
+    padding-top: 0.12rem;
+    line-height: 0.18rem;
+    .icon-addr {
+      width: 0.12rem;
+      height: 0.18rem;
+      margin-right: 0.05rem;
+      background: url(../img/map-icon.png) no-repeat;
+    }
+    .addr-detail {
+      line-height: 0.18rem;
+      font-family: PingFangSC-Regular;
+      font-size: 0.14rem;
+      color: #5e5e5e;
+
+    }
+    .arrow-right {
+      position: absolute;
+      right: 0;
+      align-self: flex-end;
+      width: 0.1rem;
+      height: 0.16rem;
+      background: url(../img/next-page.png) no-repeat;
+    }
+  }
+}
