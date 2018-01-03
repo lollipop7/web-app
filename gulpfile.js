@@ -102,10 +102,13 @@ gulp.task('base64:watch', () => {
 
 //js
 gulp.task('js',()=> {
-    return gulp.src(join(srcDir,'script/bundle.js'))
-        .pipe($.babel())
-        .pipe(gulp.dest(join(srcDir,'www/js/')));
-    console.log(`js is saved`);
+    fileArray.forEach(ejsFileName=>{
+        return gulp.src(join(srcDir,`script/${ejsFileName}.js`))
+            .pipe($.babel())
+            .pipe(gulp.dest(join(srcDir,'www/js/')));
+        console.log(`js is saved`);
+    })
+
 });
 //sass watch
 gulp.task('js:watch',()=> {
