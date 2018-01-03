@@ -21,6 +21,7 @@
     "babel-preset-env": "^1.6.1",
     "babel-preset-es2015": "^6.24.1",
     "browser-sync": "^2.21.0",
+    "cors": "^2.8.4",
     "ejs": "^2.5.7",
     "express": "^4.15.2",
     "gulp": "^3.9.1",
@@ -34,7 +35,8 @@
     "gulp-rename": "^1.2.2",
     "gulp-sass": "^3.1.0",
     "gulp-sourcemaps": "^2.6.2",
-    "gulp-uglify": "^3.0.0"
+    "gulp-uglify": "^3.0.0",
+    "http-proxy-middleware": "^0.17.4"
   },
-  "proxy": "http://192.168.1.251:6688/emobile/duty"
+  "proxy": "http://192.168.1.251:6688/"
 }
