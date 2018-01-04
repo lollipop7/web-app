@@ -23,7 +23,7 @@ require(['jquery', 'lodash', 'getCookie', 'getUrlParam'], function ($, _, getCoo
 
     var testJson = {
         "head": {
-            "transcode": "H0023",
+            "transcode": "H0016",
             "type": "h"
         },
         "data": {
@@ -37,7 +37,7 @@ require(['jquery', 'lodash', 'getCookie', 'getUrlParam'], function ($, _, getCoo
 
     $.ajax({
         type: "POST",
-        url: "/emobile/api/hr/selnews",
+        url: "/emobile/api/hr/pinfodetail",
         // contentType: "application/json",
         data: JSON.stringify(testJson),
         dataType: "json",
