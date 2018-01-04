@@ -70,7 +70,8 @@ gulp.task('sass',() => {
         return gulp.src(join(sassDir,`${ejsFileName}/${ejsFileName}.scss`))
         //初始化
             .pipe($.sourcemaps.init())
-            .pipe($.sass().on('error',$.sass.logError))
+            .pipe($.sass({outputStyle: 'compressed'}).on('error',$.sass.logError))
+            .pipe($.autoprefixer())
             //生成sourcemap文件
             .pipe($.sourcemaps.write())
             .pipe(gulp.dest(join(srcDir,'www/css/')));

@@ -16,20 +16,24 @@
       font-size: 0.12rem;
       color: #a0a0a0;
     }
-    .img-box {
-      margin: 0.2rem 0;
-      background-color: red;
+  }
+  .news-arcticle {
+    .imgbox {
+      margin-bottom: 0.2rem;
+      //background-color: red;
       width: 100%;
       height: 2.04rem;
-    }
-    .article {
-      .para {
-        margin-bottom: 0.26rem;
-        line-height: 0.24rem;
-        font-family: PingFangSC-Regular;
-        font-size: 0.16rem;
-        color: #656565;
+      img {
+        width: 100%;
+        height: 100%;
       }
+    }
+    p {
+      margin-bottom: 0.24rem;
+      line-height: 0.24rem;
+      font-family: PingFangSC-Regular;
+      font-size: 0.16rem;
+      color: #656565;
     }
   }
 }

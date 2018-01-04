@@ -2,24 +2,28 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ec3d8592-0f67-482c-acfb-12b481301e42" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/www/js/corpdetail.js" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/www.zip" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ejs/corpdetail/corpdetail.ejs" afterPath="$PROJECT_DIR$/src/ejs/corpdetail/corpdetail.ejs" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower.json" afterPath="$PROJECT_DIR$/bower.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gulpfile.js" afterPath="$PROJECT_DIR$/gulpfile.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/package.json" afterPath="$PROJECT_DIR$/package.json" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ejs/corpdetail/module.ejs" afterPath="$PROJECT_DIR$/src/ejs/corpdetail/module.ejs" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ejs/resume/resume.ejs" afterPath="$PROJECT_DIR$/src/ejs/resume/resume.ejs" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ejs/news/module.ejs" afterPath="$PROJECT_DIR$/src/ejs/news/module.ejs" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ejs/news/news.ejs" afterPath="$PROJECT_DIR$/src/ejs/news/news.ejs" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ejs/send-interview/module.ejs" afterPath="$PROJECT_DIR$/src/ejs/send-interview/module.ejs" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ejs/send-interview/send-interview.ejs" afterPath="$PROJECT_DIR$/src/ejs/send-interview/send-interview.ejs" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/sass/corpdetail/module.scss" afterPath="$PROJECT_DIR$/src/sass/corpdetail/module.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/sass/includes/_public.scss" afterPath="$PROJECT_DIR$/src/sass/includes/_public.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/sass/news/module.scss" afterPath="$PROJECT_DIR$/src/sass/news/module.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/script/corpdetail.js" afterPath="$PROJECT_DIR$/src/script/corpdetail.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/www/corpdetail.html" afterPath="$PROJECT_DIR$/src/www/corpdetail.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/www/css/cancel-interview.css" afterPath="$PROJECT_DIR$/src/www/css/cancel-interview.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/www/css/corpdetail.css" afterPath="$PROJECT_DIR$/src/www/css/corpdetail.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/www/css/jobinfo.css" afterPath="$PROJECT_DIR$/src/www/css/jobinfo.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/www/css/news.css" afterPath="$PROJECT_DIR$/src/www/css/news.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/www/css/resume.css" afterPath="$PROJECT_DIR$/src/www/css/resume.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/www/css/send-interview.css" afterPath="$PROJECT_DIR$/src/www/css/send-interview.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/www/resume.html" afterPath="$PROJECT_DIR$/src/www/resume.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/www/js/getCookie.js" afterPath="$PROJECT_DIR$/src/www/js/bundle.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/www/js/main.js" afterPath="$PROJECT_DIR$/src/www/js/resume.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/www/interview/sendInterView/detail.html" afterPath="$PROJECT_DIR$/src/www/interview/sendInterView/detail.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/www/js/corpdetail.js" afterPath="$PROJECT_DIR$/src/www/js/corpdetail.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/www/news.html" afterPath="$PROJECT_DIR$/src/www/news.html" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -33,81 +37,51 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="package.json" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/package.json">
+      <file leaf-file-name="corpdetail.scss" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/sass/corpdetail/corpdetail.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="745">
-              <caret line="42" column="0" lean-forward="false" selection-start-line="42" selection-start-column="0" selection-end-line="42" selection-end-column="0" />
+            <state relative-caret-position="147">
+              <caret line="7" column="34" lean-forward="false" selection-start-line="7" selection-start-column="34" selection-end-line="7" selection-end-column="34" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="resume.ejs" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/ejs/resume/resume.ejs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="126">
-              <caret line="6" column="59" lean-forward="false" selection-start-line="6" selection-start-column="59" selection-end-line="6" selection-end-column="59" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="corpdetail.ejs" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/ejs/corpdetail/corpdetail.ejs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="84">
-              <caret line="4" column="28" lean-forward="false" selection-start-line="4" selection-start-column="28" selection-end-line="4" selection-end-column="28" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="corpdetail.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/script/corpdetail.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="378">
-              <caret line="18" column="49" lean-forward="false" selection-start-line="18" selection-start-column="49" selection-end-line="18" selection-end-column="49" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="module.ejs" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/ejs/corpdetail/module.ejs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="789">
-              <caret line="38" column="39" lean-forward="false" selection-start-line="38" selection-start-column="39" selection-end-line="38" selection-end-column="39" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="module.scss" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/sass/corpdetail/module.scss">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="483">
-              <caret line="59" column="5" lean-forward="false" selection-start-line="53" selection-start-column="4" selection-end-line="59" selection-end-column="5" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="gulpfile.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/gulpfile.js">
+      <file leaf-file-name="jobinfo.scss" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/sass/jobinfo/jobinfo.scss">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="168">
-              <caret line="59" column="7" lean-forward="true" selection-start-line="59" selection-start-column="7" selection-end-line="59" selection-end-column="7" />
+              <caret line="8" column="34" lean-forward="false" selection-start-line="8" selection-start-column="34" selection-end-line="8" selection-end-column="34" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="bundle.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/www/js/bundle.js">
+      <file leaf-file-name="news.scss" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/sass/news/news.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="273">
-              <caret line="15" column="24" lean-forward="false" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="24" />
+            <state relative-caret-position="126">
+              <caret line="6" column="17" lean-forward="false" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="resume.scss" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/sass/resume/resume.scss">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="126">
+              <caret line="6" column="17" lean-forward="false" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="gulpfile.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/gulpfile.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="399">
+              <caret line="72" column="41" lean-forward="false" selection-start-line="72" selection-start-column="41" selection-end-line="72" selection-end-column="41" />
               <folding />
             </state>
           </provider>
@@ -135,6 +109,8 @@
       <find>addr-info</find>
       <find>pre</find>
       <find>tokenKey</find>
+      <find>moment</find>
+      <find>'1411961379000'</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -143,16 +119,10 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/www/index.html" />
-        <option value="$PROJECT_DIR$/src/ejs/cancel-interview/cancel-interview.ejs" />
-        <option value="$PROJECT_DIR$/src/ejs/index/module.ejs" />
         <option value="$PROJECT_DIR$/src/ejs/index/index.ejs" />
         <option value="$PROJECT_DIR$/src/sass/send-interview/interview-module.scss" />
         <option value="$PROJECT_DIR$/src/ejs/send-interview/interview-module.ejs" />
-        <option value="$PROJECT_DIR$/src/ejs/send-interview/send-interview.ejs" />
         <option value="$PROJECT_DIR$/src/sass/send-interview/module.scss" />
-        <option value="$PROJECT_DIR$/src/sass/send-interview/send-interview.scss" />
-        <option value="$PROJECT_DIR$/src/ejs/send-interview/module.ejs" />
         <option value="$PROJECT_DIR$/src/sass/includes/_variable.scss" />
         <option value="$PROJECT_DIR$/src/ejs/components/posi-brief.ejs" />
         <option value="$PROJECT_DIR$/src/sass/components/posi-brief.scss" />
@@ -161,22 +131,15 @@
         <option value="$PROJECT_DIR$/src/ejs/components/postbox.ejs" />
         <option value="$PROJECT_DIR$/src/ejs/components/corp-addr.ejs" />
         <option value="$PROJECT_DIR$/src/sass/components/corp-addr.scss" />
-        <option value="$PROJECT_DIR$/src/sass/corpdetail/corpdetail.scss" />
-        <option value="$PROJECT_DIR$/src/sass/jobinfo/jobinfo.scss" />
         <option value="$PROJECT_DIR$/src/ejs/jobinfo/module.ejs" />
         <option value="$PROJECT_DIR$/src/ejs/jobinfo/jobinfo.ejs" />
         <option value="$PROJECT_DIR$/src/sass/jobinfo/module.scss" />
-        <option value="$PROJECT_DIR$/src/sass/news/news.scss" />
-        <option value="$PROJECT_DIR$/src/ejs/news/module.ejs" />
-        <option value="$PROJECT_DIR$/src/sass/news/module.scss" />
         <option value="$PROJECT_DIR$/src/data/data.js" />
-        <option value="$PROJECT_DIR$/src/sass/resume/resume.scss" />
         <option value="$PROJECT_DIR$/src/sass/includes/_initial.scss" />
         <option value="$PROJECT_DIR$/src/ejs/resume/module.ejs" />
         <option value="$PROJECT_DIR$/src/sass/resume/module.scss" />
         <option value="$PROJECT_DIR$/src/www/js/common.js" />
         <option value="$PROJECT_DIR$/src/www/js/getQueryString.js" />
-        <option value="$PROJECT_DIR$/src/ejs/news/news.ejs" />
         <option value="$PROJECT_DIR$/src/script/main.js" />
         <option value="$PROJECT_DIR$/src/ejs/corprecru/head.ejs" />
         <option value="$PROJECT_DIR$/src/ejs/components/head.ejs" />
@@ -189,11 +152,24 @@
         <option value="$PROJECT_DIR$/src/sass/includes/_public.scss" />
         <option value="$PROJECT_DIR$/src/ejs/corpdetail/corpdetail.ejs" />
         <option value="$PROJECT_DIR$/src/www/js/getCookie.js" />
+        <option value="$PROJECT_DIR$/src/www/js/corpdetail.js" />
         <option value="$PROJECT_DIR$/src/sass/corpdetail/module.scss" />
         <option value="$PROJECT_DIR$/src/ejs/corpdetail/module.ejs" />
-        <option value="$PROJECT_DIR$/src/www/js/corpdetail.js" />
-        <option value="$PROJECT_DIR$/gulpfile.js" />
+        <option value="$PROJECT_DIR$/src/www/js/bundle.js" />
+        <option value="$PROJECT_DIR$/src/ejs/news/module.ejs" />
+        <option value="$PROJECT_DIR$/src/ejs/news/news.ejs" />
+        <option value="$PROJECT_DIR$/src/sass/news/module.scss" />
+        <option value="$PROJECT_DIR$/src/ejs/send-interview/module.ejs" />
+        <option value="$PROJECT_DIR$/src/ejs/send-interview/send-interview.ejs" />
+        <option value="$PROJECT_DIR$/src/script/news.js" />
         <option value="$PROJECT_DIR$/src/script/corpdetail.js" />
+        <option value="$PROJECT_DIR$/src/script/send-interview.js" />
+        <option value="$PROJECT_DIR$/gulpfile.js" />
+        <option value="$PROJECT_DIR$/src/sass/corpdetail/corpdetail.scss" />
+        <option value="$PROJECT_DIR$/src/sass/jobinfo/jobinfo.scss" />
+        <option value="$PROJECT_DIR$/src/sass/news/news.scss" />
+        <option value="$PROJECT_DIR$/src/sass/resume/resume.scss" />
+        <option value="$PROJECT_DIR$/src/sass/send-interview/send-interview.scss" />
       </list>
     </option>
   </component>
@@ -449,7 +425,7 @@
               <item name="web-app" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="www" type="462c0819:PsiDirectoryNode" />
-              <item name="interview" type="462c0819:PsiDirectoryNode" />
+              <item name="css" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="web-app" type="b2602c69:ProjectViewProjectNode" />
@@ -457,15 +433,6 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="www" type="462c0819:PsiDirectoryNode" />
               <item name="interview" type="462c0819:PsiDirectoryNode" />
-              <item name="cancelInterView" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="web-app" type="b2602c69:ProjectViewProjectNode" />
-              <item name="web-app" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="www" type="462c0819:PsiDirectoryNode" />
-              <item name="interview" type="462c0819:PsiDirectoryNode" />
-              <item name="sendInterView" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="web-app" type="b2602c69:ProjectViewProjectNode" />
@@ -558,8 +525,8 @@
     </list>
     <recent_temporary>
       <list size="3">
-        <item index="0" class="java.lang.String" itemvalue="Gulp.js.js:watch" />
-        <item index="1" class="java.lang.String" itemvalue="Gulp.js.ws" />
+        <item index="0" class="java.lang.String" itemvalue="Gulp.js.ws" />
+        <item index="1" class="java.lang.String" itemvalue="Gulp.js.js:watch" />
         <item index="2" class="java.lang.String" itemvalue="Gulp.js.watch:html:css:js" />
       </list>
     </recent_temporary>
@@ -582,12 +549,12 @@
       <workItem from="1514793358017" duration="7598000" />
       <workItem from="1514855193233" duration="18733000" />
       <workItem from="1514942580388" duration="23512000" />
-      <workItem from="1515028979667" duration="9277000" />
+      <workItem from="1515028979667" duration="23711000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="134183000" />
+    <option name="totallyTimeSpent" value="148617000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -651,98 +618,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/www/interview/sendInterView/detail.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ejs/index/module.ejs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="327">
-          <caret line="78" column="61" lean-forward="true" selection-start-line="78" selection-start-column="61" selection-end-line="78" selection-end-column="61" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ejs/send-interview/module.ejs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="42">
-          <caret line="39" column="38" lean-forward="false" selection-start-line="39" selection-start-column="38" selection-end-line="39" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/sass/send-interview/module.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="222">
-          <caret line="16" column="12" lean-forward="false" selection-start-line="16" selection-start-column="12" selection-end-line="16" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/sass/includes/_variable.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="84">
-          <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ejs/components/posi-brief.ejs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="504">
-          <caret line="69" column="22" lean-forward="false" selection-start-line="67" selection-start-column="16" selection-end-line="69" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/sass/components/posi-brief.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="10" column="25" lean-forward="false" selection-start-line="10" selection-start-column="6" selection-end-line="10" selection-end-column="25" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ejs/send-interview/send-interview.ejs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="7" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/sass/components/postbox.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="294">
-          <caret line="14" column="23" lean-forward="false" selection-start-line="14" selection-start-column="23" selection-end-line="14" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ejs/components/postbox.ejs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="147">
-          <caret line="7" column="17" lean-forward="false" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/sass/components/corp-addr.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="537">
-          <caret line="32" column="1" lean-forward="false" selection-start-line="32" selection-start-column="1" selection-end-line="32" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/sass/corpdetail/corpdetail.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="147">
-          <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/sass/jobinfo/jobinfo.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="8" column="34" lean-forward="false" selection-start-line="8" selection-start-column="34" selection-end-line="8" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/ejs/jobinfo/module.ejs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="334">
@@ -754,27 +629,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="357">
           <caret line="17" column="3" lean-forward="false" selection-start-line="17" selection-start-column="3" selection-end-line="17" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/sass/send-interview/send-interview.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="21">
-          <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="6" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ejs/news/module.ejs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="15" column="193" lean-forward="false" selection-start-line="15" selection-start-column="193" selection-end-line="15" selection-end-column="193" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/sass/news/module.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="147">
-          <caret line="7" column="25" lean-forward="false" selection-start-line="7" selection-start-column="25" selection-end-line="7" selection-end-column="25" />
         </state>
       </provider>
     </entry>
@@ -803,20 +657,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/sass/resume/resume.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="6" column="17" lean-forward="false" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/sass/news/news.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="84">
-          <caret line="4" column="29" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="6" selection-end-column="17" />
         </state>
       </provider>
     </entry>
@@ -893,20 +733,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/ejs/send-interview/head.ejs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ejs/news/news.ejs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="8" column="7" lean-forward="false" selection-start-line="8" selection-start-column="7" selection-end-line="8" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/www/corpdetail.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -962,38 +788,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/sass/corpdetail/module.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="483">
-          <caret line="59" column="5" lean-forward="false" selection-start-line="53" selection-start-column="4" selection-end-line="59" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/gulpfile.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="59" column="7" lean-forward="true" selection-start-line="59" selection-start-column="7" selection-end-line="59" selection-end-column="7" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ejs/corpdetail/module.ejs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="789">
-          <caret line="38" column="39" lean-forward="false" selection-start-line="38" selection-start-column="39" selection-end-line="38" selection-end-column="39" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ejs/corpdetail/corpdetail.ejs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="84">
-          <caret line="4" column="28" lean-forward="false" selection-start-line="4" selection-start-column="28" selection-end-line="4" selection-end-column="28" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/www/js/corpdetail.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1302">
@@ -1002,18 +796,210 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/script/corpdetail.js">
+    <entry file="file://$PROJECT_DIR$/src/sass/corpdetail/module.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
-          <caret line="18" column="49" lean-forward="false" selection-start-line="18" selection-start-column="49" selection-end-line="18" selection-end-column="49" />
+        <state relative-caret-position="21">
+          <caret line="31" column="0" lean-forward="false" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ejs/corpdetail/module.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="159">
+          <caret line="23" column="26" lean-forward="false" selection-start-line="23" selection-start-column="16" selection-end-line="23" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ejs/news/module.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="294">
+          <caret line="14" column="11" lean-forward="false" selection-start-line="14" selection-start-column="11" selection-end-line="14" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sass/news/module.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="651">
+          <caret line="31" column="25" lean-forward="false" selection-start-line="31" selection-start-column="25" selection-end-line="31" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ejs/news/news.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="7" selection-end-column="57" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ejs/send-interview/head.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="6" column="39" lean-forward="false" selection-start-line="6" selection-start-column="34" selection-end-line="6" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ejs/corpdetail/corpdetail.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="63">
+          <caret line="3" column="45" lean-forward="false" selection-start-line="3" selection-start-column="8" selection-end-line="3" selection-end-column="45" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ejs/send-interview/module.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="432">
+          <caret line="36" column="6" lean-forward="false" selection-start-line="36" selection-start-column="6" selection-end-line="36" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ejs/send-interview/send-interview.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="9" column="7" lean-forward="true" selection-start-line="9" selection-start-column="7" selection-end-line="9" selection-end-column="7" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/www/js/bundle.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="273">
-          <caret line="15" column="24" lean-forward="false" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="24" />
+        <state relative-caret-position="63">
+          <caret line="5" column="3" lean-forward="false" selection-start-line="5" selection-start-column="3" selection-end-line="5" selection-end-column="3" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/script/corpdetail.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="15" column="0" lean-forward="true" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/script/news.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="23" column="0" lean-forward="true" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/script/send-interview.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="488">
+          <caret line="80" column="3" lean-forward="true" selection-start-line="80" selection-start-column="3" selection-end-line="80" selection-end-column="3" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/www/css/send-interview.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-4158">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://F:/wage-research/gulpfile.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="462">
+          <caret line="66" column="34" lean-forward="true" selection-start-line="66" selection-start-column="18" selection-end-line="66" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sass/corpdetail/corpdetail.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="147">
+          <caret line="7" column="34" lean-forward="false" selection-start-line="7" selection-start-column="34" selection-end-line="7" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sass/jobinfo/jobinfo.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="8" column="34" lean-forward="false" selection-start-line="8" selection-start-column="34" selection-end-line="8" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sass/news/news.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="6" column="17" lean-forward="false" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/www/css/cancel-interview.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/www/css/corpdetail.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/www/css/jobinfo.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/www/css/news.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/www/css/resume.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sass/send-interview/send-interview.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="6" column="18" lean-forward="false" selection-start-line="6" selection-start-column="18" selection-end-line="6" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sass/resume/resume.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="6" column="17" lean-forward="false" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gulpfile.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="399">
+          <caret line="72" column="41" lean-forward="false" selection-start-line="72" selection-start-column="41" selection-end-line="72" selection-end-column="41" />
           <folding />
         </state>
       </provider>

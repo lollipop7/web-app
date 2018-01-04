@@ -4,14 +4,16 @@
 require.config({
     paths: {
         "jquery": "jquery.min",
-        "lodash": "lodash.min",
         "bundle": "bundle"
     }
 });
-require(['jquery', 'lodash', 'bundle'], function ($, _, bundle){
+require(['jquery', 'bundle'], function ($, bundle){
     // some code here
-    document.cookie = "CHYJRTGN_APP1=" + escape("E6A77CE527FFAF63C3EEBF428C3351973A03FE6E4DCC27B49D42AF8AF096F2FE8CEC75826A9C5764772355A4C04E1BC3D92418E5361D7311E6FE89E5CC55F8ED80C803648A461B2305F27B6D0E8DCB959266B5888AE3BA00");//cookieName为要写入的Cookie的名称
-    document.cookie = "CacheKey_APP1=" + escape("61502EADEDFE49FA84898F6A2855B402AF4FE59F91D05746FAD7C16455CC6E4475356FDEAC6A4E458B83A7648FF2B31C7BA718C124E06CC6");//cookieName为要写入的Cookie的名称
+    //token
+    document.cookie = "CHYJRTGN_APP1=" + escape("E458BD3B260FB31485BB8BC07C9D8400741B232B2D53AF2CDC357750D3AD102C50C7B4E016D98C9E7EFD3DC5806B82F395279F5966B16340BFEF6CD725F1F332175D3ACF92A9941E7882C22EC2E02173875E0628FC03577D");//cookieName为要写入的Cookie的名称
+    //tokenKey
+    document.cookie = "CacheKey_APP1=" + escape("61502EADEDFE49FA39A6B23F6B25ECCE22BC1C2AED9FB07EB99669FEFDA9EB83DEA97C7B906C81217253D740C37E8976E9A48D1ECD91D5C5");//cookieName为要写入的Cookie的名称
+
     /**
      获取企业版传过来的token 和tokenkey
      */
@@ -55,13 +57,11 @@ require(['jquery', 'lodash', 'bundle'], function ($, _, bundle){
                 //公司视频信息
                 const videolist = data.data.videolist;
                 console.log(videolist);
-                // if(videolist.length == 0) {
-                //     $('.corp-video .no-video').show();
-                //     $('.corp-video .video-wrap').hide();
-                // }else if (videolist.length != 0){
-                //     $('.corp-video .no-video').hide();
-                //     $('.corp-video .video-wrap').show();
-                // }
+                if(videolist.length == 0) {
+                    $('.corp-video').hide();
+                }else if (videolist.length != 0){
+                    $('.corp-video').show();
+                }
             }
         }
     })
