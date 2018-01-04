@@ -13,3 +13,16 @@ h3.subtitle {
   font-size: 0.16rem;
   color: #656565;
 }
+/*加载*/
+.loading{
+  width:100%;
+  height:100%;
+  position: absolute;
+  top:0;
+  left:0;
+  background: #fff url(../img/loading.gif) no-repeat 50% 50%;
+  background-size: contain;
+  opacity:1;
+  z-index:9999;
+  filter:progid:DXImageTransform.Microsoft.Alpha(opacity=70);
+}

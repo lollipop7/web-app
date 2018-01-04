@@ -10,6 +10,7 @@
 
 <body>
 <div class="corpdetail-page">
+    <!--<div id="loadingzzz" class="loading"></div>-->
     <div>
     <div class="corp-flag">
         <div class="logo">
@@ -35,6 +36,9 @@
     </div>
     <div class="corp-video">
         <div class="inner-box">
+            <div class="no-video">
+                <h3>暂无视频</h3>
+            </div>
             <div class="video-wrap">
                 <video
                        controls
@@ -45,12 +49,12 @@
                 >
                     <source src="./video/vv.mp4#t=5,10" type="video/mp4"
                     />
-                    <p>您的浏览器不支持video元素.</p>
+                    <p>您的浏览器不支持video元素。</p>
                 </video>
+                <p class="corp-video-name" id="video-name">
+                    51金融圈宣传片-2017
+                </p>
             </div>
-            <p class="corp-video-name" id="video-name">
-                51金融圈宣传片-2017
-            </p>
         </div>
     </div>
     <div class="corp-brief">
@@ -119,5 +123,7 @@
     </div>
 </div>
 </div>
+
+<script src="js/require.js" data-main="js/corpdetail"></script>
 </body>
 </html>
