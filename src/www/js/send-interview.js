@@ -4,7 +4,10 @@
 require.config({
     paths: {
         "jquery": "jquery.min",
-        "bundle": "bundle"
+        "bundle": "bundle",
+        "lodash": "lodash.min",
+        "date": "date",
+        "iscroll": "iscroll"
     },
     shim: {
         "moment": {
@@ -13,12 +16,12 @@ require.config({
     }
 });
 
-require(['jquery', 'bundle', 'moment'], function ($, bundle, moment) {
+require(['jquery', 'bundle', 'moment', 'lodash', 'iscroll', 'date'], function ($, bundle, moment, lodash, iscroll, date) {
     // some code here
     //token
-    document.cookie = "CHYJRTGN_APP1=" + escape("E458BD3B260FB31485BB8BC07C9D8400741B232B2D53AF2CDC357750D3AD102C50C7B4E016D98C9E7EFD3DC5806B82F395279F5966B16340BFEF6CD725F1F332175D3ACF92A9941E7882C22EC2E02173875E0628FC03577D"); //cookieName为要写入的Cookie的名称
+    document.cookie = "CHYJRTGN_APP1=" + escape("048B8A226BE07D9BA24B07C5C462B60221C48E17B59540A97CDF0BFBE8CAE71E4827008242F9BD0B4B10DC30D909FF7C174F1DEE1FB6259A2CA5FFF5D8EE4D34821BE0BB8865E9C95CF1C0EE9B4C1964AA57250986306920"); //cookieName为要写入的Cookie的名称
     //tokenKey
-    document.cookie = "CacheKey_APP1=" + escape("61502EADEDFE49FA39A6B23F6B25ECCE22BC1C2AED9FB07EB99669FEFDA9EB83DEA97C7B906C81217253D740C37E8976E9A48D1ECD91D5C5"); //cookieName为要写入的Cookie的名称
+    document.cookie = "CacheKey_APP1=" + escape("61502EADEDFE49FABB50B229214546DB0D7B8EEC09493B67268A488F93959510A95FEFDE76264BD05B7584D747546CE252AF5D2BF03F714B"); //cookieName为要写入的Cookie的名称
 
     //获取企业版传过来的token 和tokenkey
 
@@ -29,7 +32,8 @@ require(['jquery', 'bundle', 'moment'], function ($, bundle, moment) {
     //应聘者环信id
     const PhxID = bundle.getUrlParam('PhxID');
 
-    const json = {
+    //发送面试邀请
+    const sendInterviewJson = {
         "head": {
             "transcode": "H0072",
             "type": "h"
@@ -46,13 +50,12 @@ require(['jquery', 'bundle', 'moment'], function ($, bundle, moment) {
         type: "POST",
         url: "/emobile/api/hr/sendInterview",
         contentType: "application/json",
-        data: JSON.stringify(json),
+        data: JSON.stringify(sendInterviewJson),
         dataType: "json",
         error: function (xhr, status, error) {
             console.log(xhr, status, error);
         },
         success: function (data) {
-            // console.log(data)
             if (data.returnCode == "AAAAAAA") {
                 $('#loadingzzz').hide();
                 const {
@@ -68,10 +71,124 @@ require(['jquery', 'bundle', 'moment'], function ($, bundle, moment) {
                     headimg, //头像
                     pusername //应聘者姓名
                 } = data.data;
-                console.log(industry);
+
+                $('#jobname').text(`${jobname ? jobname : '不详'}`);
+
+                jobcity ? $('#posi_city').text(`${jobcity}`) : $('#posi_city').text('不详');
+                workyears ? $('#posi_workyears').text(`${workyears}`).prepend('<b>|</b>') : $('#posi_workyears').text('不详');
+                ebid ? $('#posi_edu').text(`${ebid}`).prepend('<b>|</b>') : $('#posi_edu').text('不详');
+                //规模
+                const scope = data.scope;
+                scope ? $('#size').text(scope) : $('#size').text('不详');
+
+                //福利
+                const weal = data.weal;
+                let wealRlt = '';
+                _.forEach(weal, (item, index) => {
+                    wealRlt += `
+                        <div class="inline-block">
+                            ${item}
+                        </div> 
+                    `;
+                });
+                $('#benifit').empty().append(wealRlt);
+
+                //工资
+                salary ? $('#salary').text(salary) : $('#salary').text('面议');
+
+                //公司logo
+                headimg ? ($('#corp_logo').show().attr('src', headimg), $('.corp-info .logo .mask').hide()) : $('#corp_logo').hide();
+
+                //公司名称
+                corpname ? $('#cor_name').text(corpname) : $('#cor_name').text('不详');
+
+                //公司行业
+                industry ? $('#industry').text(industry).prepend('<b>|</b>') : $('#industry').text('不详');
             } else {
                 $('#loadingzzz').show();
             }
         }
+    });
+
+    function saveIterview() {
+        //职位编号
+        const jobid = $("#jobid").val();
+        //应聘者环信id
+        const PhxID = $("#PhxID").val();
+        //职位名称
+        const jobname = $("#jobname").text();
+        //面试时间
+        const interviewtime = $("#endTime").val();
+        //联系电话
+        const cphone = $("#cphone").val();
+        //面试地点
+        const address = $("#address").val();
+        //备注说明
+        const remarks = $("#remarks").val();
+
+        //保存面试邀请
+        const saveInterviewJson = {
+            "head": {
+                "transcode": "H0070",
+                "type": "h"
+            },
+            "data": {
+                "token": token,
+                "tokenKey": tokenKey,
+                "jobid": jobid,
+                "PhxID": PhxID,
+                "jobname": jobname,
+                "interviewtime": interviewtime,
+                "cphone": cphone,
+                "address": address,
+                "remarks": remarks
+                // "PhxID":"p2150001",
+                // "jobid":"42",
+                // "jobname":"投融资总监",
+                // "interviewtime":"2016-10-17 8:00",
+                // "cphone":"15502126008",
+                // "address":"上海市浦东新区陆家嘴软件园",
+                // "remarks":"请准时前来面试"
+            }
+        };
+
+        const PR = "http://" + window.location.host + "/";
+        $.ajax({
+            type: "POST",
+            url: PR + "emobile/api/hr/saveInterview",
+            contentType: "application/json",
+            data: JSON.stringify(saveInterviewJson),
+            dataType: "json",
+            success: function (data) {
+                if (data.returnCode == "AAAAAAA") {
+                    var str = "{\"data\":{\"corpname\":\"" + data.data.corpname + "\",\"address\":\"" + data.data.address + "\",\"interviewtime\":\"" + data.data.interviewtime + "\",\"inteid\":\"" + data.data.inteid + "\"}}";
+                    window.location.href += "&" + str;
+                }
+            },
+            error: function (xhr, status, error) {
+                console.log(xhr, status, error);
+            }
+        });
+    }
+
+    $('.saveIterview').click(function () {
+        saveIterview();
+    });
+
+    //字数限制
+    $('.oText').bind('input propertychange', function () {
+        var len = $(this).val().length;
+        if (len < 100) {
+            $('.oSpan em').html(len);
+        } else {
+            var limit = $(this).val().substring(0, 100);
+            $('.oText').val(limit);
+            $('.oSpan em').html('100');
+        }
+    });
+
+    $(function () {
+        $('#beginTime').date();
+        $('#endTime').date({ theme: "datetime" });
     });
 });

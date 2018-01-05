@@ -36,6 +36,7 @@
       padding: 0.1rem 0 0.14rem;
       div {
         margin-right: 0.05rem;
+        margin-bottom: 0.05rem;
         padding: 0.03rem 0.07rem;
         border: 0.01rem solid #ff9e00;
         border-radius: 20%;
@@ -68,6 +69,7 @@
         img {
           width: 0.4rem;
           height: 0.4rem;
+          display: none;
         }
       }
     }
@@ -82,10 +84,16 @@
         color: #656565;
       }
       .scale {
-        line-height: 0.14rem;
-        font-family: PingFangSC-Regular;
-        font-size: 0.12rem;
-        color: #a0a0a0;
+        font-size: 0;
+        span,b {
+          line-height: 0.14rem;
+          font-family: PingFangSC-Regular;
+          font-size: 0.12rem;
+          color: #a0a0a0;
+        }
+        b {
+          padding: 0 0.05rem;
+        }
       }
     }
     .arrow-box {

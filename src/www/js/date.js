@@ -21,8 +21,8 @@
         var yearScroll=null,monthScroll=null,dayScroll=null;
         var HourScroll=null,MinuteScroll=null,SecondScroll=null;
         $.fn.date.defaultOptions = {
-            beginyear:1970,                 //日期--年--份开始
-            endyear:2020,                   //日期--年--份结束
+            beginyear:2017,                 //日期--年--份开始
+            endyear:2030,                   //日期--年--份结束
             beginmonth:1,                   //日期--月--份结束
             endmonth:12,                    //日期--月--份结束
             beginday:1,                     //日期--日--份结束
@@ -237,14 +237,14 @@
             $("#datePlugin").html(str);
         }
         function addTimeStyle(){
-            $("#datePage").css("height","380px");
-            $("#datePage").css("top","60px");
+            $("#datePage").css("height","3.8rem");
+            $("#datePage").css("top","0.6rem");
             $("#yearwrapper").css("position","absolute");
-            $("#yearwrapper").css("bottom","200px");
+            $("#yearwrapper").css("bottom","2rem");
             $("#monthwrapper").css("position","absolute");
-            $("#monthwrapper").css("bottom","200px");
+            $("#monthwrapper").css("bottom","2rem");
             $("#daywrapper").css("position","absolute");
-            $("#daywrapper").css("bottom","200px");
+            $("#daywrapper").css("bottom","2rem");
         }
         //创建 --年-- 列表
         function createYEAR_UL(){

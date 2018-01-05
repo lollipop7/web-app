@@ -17,29 +17,29 @@
                 <header>
                     <h2 >
                     <span id="jobname">
-                        投资理财经理
+                        <!--投资理财经理-->
                     </span>
                     </h2>
                 </header>
                 <div class="posi-info">
-                    <span id="posi-city">
-                        上海
+                    <span id="posi_city">
+                        <!--上海-->
                     </span>
-                    <b>|</b>
-                    <span id="posi-section">
+                    <!--<b>|</b>
+                    <span id="posi_section">
                         浦东新区
+                    </span>-->
+                    <!--<b>|</b>-->
+                    <span id="posi_workyears">
+                        <!--5年以上-->
                     </span>
-                    <b>|</b>
-                    <span id="posi-workyears">
-                        5年以上
-                    </span>
-                    <b>|</b>
-                    <span id="posi-edu">
-                        本科
+                    <!--<b>|</b>-->
+                    <span id="posi_edu">
+                        <!--本科-->
                     </span>
                 </div>
                 <div id="benifit" class="benifit">
-                    <div class="inline-block">
+                    <!--<div class="inline-block">
                         五险一金
                     </div>
                     <div class="inline-block">
@@ -50,29 +50,29 @@
                     </div>
                     <div class="inline-block">
                         带薪年假
-                    </div>
+                    </div>-->
                 </div>
                 <div id="salary" class="salary">
-                    10-15k
+                    <!--10-15k-->
                 </div>
             </div>
             <div class="corp-wrap">
                 <div class="corp-info">
                     <div class="logo">
                         <div class="mask"></div>
-                        <!--<img src="" alt="" id="corp-logo">-->
+                        <img src="" alt="" id="corp_logo">
                     </div>
                     <div class="corporation">
-                        <p id="cor-name" class="cor-name">
-                            上海森普资讯有限公司
+                        <p id="cor_name" class="cor-name">
+                            <!--上海森普资讯有限公司-->
                         </p>
                         <div class="scale">
                         <span id="size">
-                            500-1000人
+                            <!--500-1000人-->
                         </span>
-                            <b>|</b>
+                            <!--<b>|</b>-->
                             <span id="industry">
-                            银行保险
+                            <!--银行保险-->
                         </span>
                         </div>
                     </div>
@@ -88,25 +88,26 @@
     <div class="inner-box">
         <input type="hidden" name="PhxID" id="PhxID" value=""/>
         <input type="hidden" name="jobid" id="jobid" value=""/>
-        <div class="int_t item">
+        <div class="fillitem">
             <span class="name">面试时间</span>
-            <span class="lie" id="datePlugin">
+            <span class="lie">
                 <input id="endTime" class="kbtn" value="请选择"/>
             </span>
+            <span id="datePlugin"></span>
         </div>
-        <div class="int_p item">
+        <div class="fillitem">
             <span class="name">联系电话</span>
             <span class="lie">
                 <input type="text" placeholder="请输入联系电话" id="cphone" class="top_txtbox" onfocus="if (placeholder =='请输入联系电话'){placeholder =''}" onblur="if (placeholder ==''){placeholder='请输入联系电话'}" />
             </span>
         </div>
-        <div class="int_l item">
+        <div class="fillitem">
             <span class="name">面试地点</span>
             <span class="lie">
                 <input type="text" placeholder="请输入面试地点"  id="address"  class="top_txtbox"  onfocus="if (placeholder =='请输入面试地点'){placeholder =''}" onblur="if (placeholder ==''){placeholder='请输入面试地点'}" />
             </span>
         </div>
-        <div class="bie item">
+        <div class="other fillitem">
             <p class="name">其他说明</p>
             <textarea
                     class="txt oText"
@@ -115,10 +116,10 @@
                     placeholder="(选填)补充您的详细地址、乘车路线或您的面试要求"
                     wrap="hard"
                     onkeyup="checkLen(this)"
-            >
-            </textarea>
-            <div class="cou clearfix"><span class="oSpan"><em>0</em>/100</span></div>
+            ></textarea>
+            <div class="fontover clearfix"><span class="oSpan"><em>0</em>/100</span></div>
         </div>
+        <button class="btn saveIterview">发送邀请</button>
     </div>
 </div>
 

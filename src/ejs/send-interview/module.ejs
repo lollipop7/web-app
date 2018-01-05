@@ -2,25 +2,26 @@
     <div class="inner-box">
         <input type="hidden" name="PhxID" id="PhxID" value=""/>
         <input type="hidden" name="jobid" id="jobid" value=""/>
-        <div class="int_t item">
+        <div class="fillitem">
             <span class="name">面试时间</span>
-            <span class="lie" id="datePlugin">
+            <span class="lie">
                 <input id="endTime" class="kbtn" value="请选择"/>
             </span>
+            <span id="datePlugin"></span>
         </div>
-        <div class="int_p item">
+        <div class="fillitem">
             <span class="name">联系电话</span>
             <span class="lie">
                 <input type="text" placeholder="请输入联系电话" id="cphone" class="top_txtbox" onfocus="if (placeholder =='请输入联系电话'){placeholder =''}" onblur="if (placeholder ==''){placeholder='请输入联系电话'}" />
             </span>
         </div>
-        <div class="int_l item">
+        <div class="fillitem">
             <span class="name">面试地点</span>
             <span class="lie">
                 <input type="text" placeholder="请输入面试地点"  id="address"  class="top_txtbox"  onfocus="if (placeholder =='请输入面试地点'){placeholder =''}" onblur="if (placeholder ==''){placeholder='请输入面试地点'}" />
             </span>
         </div>
-        <div class="bie item">
+        <div class="other fillitem">
             <p class="name">其他说明</p>
             <textarea
                     class="txt oText"
@@ -29,9 +30,9 @@
                     placeholder="(选填)补充您的详细地址、乘车路线或您的面试要求"
                     wrap="hard"
                     onkeyup="checkLen(this)"
-            >
-            </textarea>
-            <div class="cou clearfix"><span class="oSpan"><em>0</em>/100</span></div>
+            ></textarea>
+            <div class="fontover clearfix"><span class="oSpan"><em>0</em>/100</span></div>
         </div>
+        <button class="btn saveIterview">发送邀请</button>
     </div>
 </div>
