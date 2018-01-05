@@ -32,7 +32,7 @@ require(['jquery', 'lodash', 'bundle'], function ($, _, bundle) {
         "data": {
             "token": token,
             "tokenKey": tokenKey,
-            "resumeid": "10000003"
+            "resumeid": "1730001"
         }
     };
 
@@ -45,6 +45,7 @@ require(['jquery', 'lodash', 'bundle'], function ($, _, bundle) {
         data: JSON.stringify(testJson),
         dataType: "json",
         success: function (data) {
+            console.log(data)
             if (data.returnCode == "AAAAAAA") {
                 const {
                     userid,	        //用户编号	
@@ -76,6 +77,8 @@ require(['jquery', 'lodash', 'bundle'], function ($, _, bundle) {
                 $('.work-exp span').text(workyears);
                 $('.location span').text(livecityid);
                 $('.location span').text(livecityid);
+                $('.mobile span').text(phone);
+                $('.email span').text(email);
 
                 // 自我评价
                 $('.evalu-box').empty().append("<p>" + selfRemark + "</p>");
@@ -99,6 +102,14 @@ require(['jquery', 'lodash', 'bundle'], function ($, _, bundle) {
                 });
                 $('.exper-box').remove();
                 $('#myexper').append(experReuslt);
+
+                // 项目经验
+                let proReuslt = "";
+                _.forEach(JSON.parse(prodata),function(item,index){
+                    proReuslt += `<div class="prog-box"><div class="prog-name">${item.projectname}</div><div class="proj-time"><span class="from">${item.starttime}</span> <b>-</b> <span class="to">${item.endtime}</span></div> <div class="proj-content">${item.projectremark}</div></div>`
+                });
+                $('.prog-box').remove();
+                $('#mypro').append(proReuslt);
 
                 // 教育经历
                 let eduReuslt = "";
