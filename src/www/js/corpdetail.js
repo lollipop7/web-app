@@ -43,6 +43,7 @@ require(['jquery', 'bundle'], function ($, bundle) {
             console.log(xhr, status, error);
         },
         success: function (data) {
+            console.log(data);
             if (data.returnCode == "AAAAAAA") {
                 const corpinfo = data.data.corpinfo;
                 // 公司logo
@@ -57,6 +58,22 @@ require(['jquery', 'bundle'], function ($, bundle) {
                     $('.corp-video').hide();
                 } else if (videolist.length != 0) {
                     $('.corp-video').show();
+                }
+                const {
+                    description, // 公司简介
+                    address // 公司地址
+                } = data.data.corpinfo; //公司基本信息
+                // 公司简介
+                if (description) {
+                    $("#intro-brief").text(description);
+                } else {
+                    $("#intro-brief").text("该公司还没有留下公司简介哦!");
+                }
+                // 公司地址
+                if (description) {
+                    $(".addr-detail").text(address);
+                } else {
+                    $(".addr-detail").text("暂无");
                 }
             }
         }
