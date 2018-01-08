@@ -5,9 +5,7 @@ require.config({
     paths: {
         "jquery": "jquery.min",
         "bundle": "bundle",
-        "lodash": "lodash.min",
-        "date": "date",
-        "iscroll": "iscroll"
+        "lodash": "lodash.min"
     },
     shim: {
         "moment": {
@@ -16,12 +14,12 @@ require.config({
     }
 });
 
-require(['jquery', 'bundle', 'moment', 'lodash', 'iscroll', 'date'], function ($, bundle, moment, lodash, iscroll, date) {
+require(['jquery', 'bundle', 'moment', 'lodash'], function ($, bundle, moment, lodash) {
     // some code here
     //token
-    document.cookie = "CHYJRTGN_APP1=" + escape("048B8A226BE07D9BA24B07C5C462B60221C48E17B59540A97CDF0BFBE8CAE71E4827008242F9BD0B4B10DC30D909FF7C174F1DEE1FB6259A2CA5FFF5D8EE4D34821BE0BB8865E9C95CF1C0EE9B4C1964AA57250986306920"); //cookieName为要写入的Cookie的名称
+    document.cookie = "CHYJRTGN_APP1=" + escape("EA19EDB5DB29A831CE730EDA92C99A999E5D9BCAD94406A030BDF06B192F4B6C1E9AEA8C9F068C27B417C48810922D2707345317C93E7C8A23953BE62EB832796F91E56D9BE478E2C9935AE111BEA437419DF880B8A75BBE"); //cookieName为要写入的Cookie的名称
     //tokenKey
-    document.cookie = "CacheKey_APP1=" + escape("61502EADEDFE49FABB50B229214546DB0D7B8EEC09493B67268A488F93959510A95FEFDE76264BD05B7584D747546CE252AF5D2BF03F714B"); //cookieName为要写入的Cookie的名称
+    document.cookie = "CacheKey_APP1=" + escape("61502EADEDFE49FA06173077B258C0745155A3952131860A334BD7FE46F8A5E6C9E766FB48DAF6560CEA3DBD574CB4E09741490C6F1B9473"); //cookieName为要写入的Cookie的名称
 
     //获取企业版传过来的token 和tokenkey
 
@@ -118,7 +116,7 @@ require(['jquery', 'bundle', 'moment', 'lodash', 'iscroll', 'date'], function ($
         //职位名称
         const jobname = $("#jobname").text();
         //面试时间
-        const interviewtime = $("#endTime").val();
+        const interviewtime = $("#interviewTime").val();
         //联系电话
         const cphone = $("#cphone").val();
         //面试地点
@@ -142,13 +140,6 @@ require(['jquery', 'bundle', 'moment', 'lodash', 'iscroll', 'date'], function ($
                 "cphone": cphone,
                 "address": address,
                 "remarks": remarks
-                // "PhxID":"p2150001",
-                // "jobid":"42",
-                // "jobname":"投融资总监",
-                // "interviewtime":"2016-10-17 8:00",
-                // "cphone":"15502126008",
-                // "address":"上海市浦东新区陆家嘴软件园",
-                // "remarks":"请准时前来面试"
             }
         };
 
@@ -171,10 +162,6 @@ require(['jquery', 'bundle', 'moment', 'lodash', 'iscroll', 'date'], function ($
         });
     }
 
-    $('.saveIterview').click(function () {
-        saveIterview();
-    });
-
     //字数限制
     $('.oText').bind('input propertychange', function () {
         var len = $(this).val().length;
@@ -187,8 +174,8 @@ require(['jquery', 'bundle', 'moment', 'lodash', 'iscroll', 'date'], function ($
         }
     });
 
-    $(function () {
-        $('#beginTime').date();
-        $('#endTime').date({ theme: "datetime" });
+    //点击按钮
+    $('.saveIterview').click(function () {
+        saveIterview();
     });
 });

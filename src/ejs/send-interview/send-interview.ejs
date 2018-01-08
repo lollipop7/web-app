@@ -1,9 +1,11 @@
 <% include head.ejs %>
 <body>
-    <div class="interview-page">
+<div class="page-group">
+    <div class="interview-page page">
         <% include ../components/posi-brief.ejs %>
         <% include module.ejs %>
     </div>
+</div>
 <% /*data-main属性的作用是，指定网页程序的主模块*/ %>
 <script src="../../js/require.js" data-main="../../js/send-interview"></script>
 </body>
