@@ -74,6 +74,7 @@ require(['jquery', 'bundle', 'tinybox', 'lodash'], function ($, bundle, tinybox,
             console.log(xhr, status, error);
         },
         success: function (data) {
+            console.log(data);
             if (data.returnCode == "AAAAAAA") {
                 $('#loadingzzz').hide();
                 const corpinfo = data.data.corpinfo;

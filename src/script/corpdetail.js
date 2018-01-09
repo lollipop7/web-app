@@ -76,6 +76,7 @@ require(['jquery', 'bundle', 'tinybox', 'lodash'], function ($, bundle, tinybox,
             console.log(xhr,status,error)
         },
         success: function (data) {
+            console.log(data)
             if(data.returnCode == "AAAAAAA") {
                 $('#loadingzzz').hide();
                 const corpinfo = data.data.corpinfo;
@@ -237,7 +238,7 @@ require(['jquery', 'bundle', 'tinybox', 'lodash'], function ($, bundle, tinybox,
                 }else if (videolist.length != 0){
                     $('.corp-video').show();
                 }
-            }else {
+            } else {
                 $('#loadingzzz').show();
                 TINY.box.show(JSON.stringify(data.returnMsg),0,0,0,0,3);
             }
