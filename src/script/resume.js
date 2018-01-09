@@ -23,6 +23,8 @@ require(['jquery', 'lodash', 'bundle'], function ($, _, bundle) {
      */
     token = bundle.getCookie("CHYJRTGN_APP1");
     tokenKey = bundle.getCookie("CacheKey_APP1");
+    // 获取resumeId
+    let resumeId = location.search.replace("?","").split("=")[1];
 
     const testJson = {
         "head": {
@@ -32,12 +34,15 @@ require(['jquery', 'lodash', 'bundle'], function ($, _, bundle) {
         "data": {
             "token": token,
             "tokenKey": tokenKey,
-            "resumeid": "1730001"
+            "resumeid": resumeId
         }
     };
 
     PR = "http://" + window.location.host;
     // PR = "http://192.168.1.251:6688/";
+
+    // 隐藏手机，邮箱
+    $('.mobile, .email').hide();
 
     $.ajax({
         type: "POST",
@@ -50,7 +55,7 @@ require(['jquery', 'lodash', 'bundle'], function ($, _, bundle) {
                 const {
                     userid,	        //用户编号	
                     username,	    //用户名称	
-                    salary,	        //薪资要求	
+                    salary,	        //薪资·要求
                     livecityid,	    //城市	
                     workyears,	    //工作年限	
                     educationbg,    //学历	
@@ -64,6 +69,9 @@ require(['jquery', 'lodash', 'bundle'], function ($, _, bundle) {
                     email,	        //邮箱		当islock为1时有数据，为0时没有数据
                     jobstatus,      //工作状态		工作状态
                     islock,	        //是否查看该简历		0 未查看 1  以查看
+                    jobNature,      //全职/兼职
+                    postsTime,      //到岗时间
+                    marital         //婚姻状况
                 } = data.resumebase; //简历基本信息
                 // 头部
                 $('.profile').css({
@@ -79,6 +87,13 @@ require(['jquery', 'lodash', 'bundle'], function ($, _, bundle) {
                 $('.location span').text(livecityid);
                 $('.mobile span').text(phone);
                 $('.email span').text(email);
+                $('.posi').text(titlenow);
+                $('.industry').text(joblb);
+                $('.job-type').text(jobNature);
+                $('.location').text(livecityid);
+                $('.salary').text(salary);
+                $('.duty-time').text(postsTime);
+                $('.marital-sta span').text(marital);
 
                 // 自我评价
                 $('.evalu-box').empty().append("<p>" + selfRemark + "</p>");
@@ -93,6 +108,7 @@ require(['jquery', 'lodash', 'bundle'], function ($, _, bundle) {
                     tradata,    //培训能力
                     othdata,    //附加信息
                     higdata,    //高级人才附加信息
+
                 } = data;
 
                 // 工作经验
@@ -126,6 +142,43 @@ require(['jquery', 'lodash', 'bundle'], function ($, _, bundle) {
                 });
                 $('.credits-box').remove();
                 $('#mycer').append(cerReuslt);
+                //查看联系方式点击事件
+                $('.look').click(function () {
+                    const testJson2 = {
+                        "head": {
+                            "transcode": "H0041",
+                            "type": "h"
+                        },
+                        "data": {
+                            "token": token,
+                            "tokenKey": tokenKey,
+                            "resumeid": resumeId
+                        }
+                    };
+                    $.ajax({
+                        type: "POST",
+                        url: "/emobile/api/hr/lockresume",
+                        contentType: "application/json",
+                        data: JSON.stringify(testJson2),
+                        dataType: "json",
+                        success: function (data) {
+                            console.log(9999,data)
+                            if((data.returnCode=='AAAAAAA')){
+                                $('.mobile, .email').show();
+                                $(".look").hide();
+                            }else{
+                                $('.mobile, .email').hide();
+                                $(".look").show();
+                                alert('您还不能查看！')
+                            }
+                        },
+                        error: function (data) {
+                            $('.mobile, .email').hide();
+                            $(".look").show();
+                            alert('您还不能查看！')
+                        }
+                    });
+                })
             }
         },
         error: function (xhr, status, error) {
