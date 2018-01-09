@@ -60,6 +60,9 @@
       font-family: PingFangSC-Regular;
       font-size: 0.14rem;
       color: #656565;
+      .intro-none {
+        display: none;
+      }
     }
     .show-more {
       display: block;
