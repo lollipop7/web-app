@@ -5,7 +5,8 @@ require.config({
     paths: {
         "jquery": "jquery.min",
         "bundle": "bundle",
-        "lodash": "lodash.min"
+        "lodash": "lodash.min",
+        "layer": "layer"
     },
     shim: {
         "moment": {
@@ -16,12 +17,12 @@ require.config({
 
 
 
-require(['jquery', 'bundle', 'moment', 'lodash'], function ($, bundle, moment, lodash){
+require(['jquery', 'bundle', 'moment', 'lodash', 'layer'], function ($, bundle, moment, lodash, layer){
     // some code here
     //token
-    document.cookie = "CHYJRTGN_APP1=" + escape("EA19EDB5DB29A831CE730EDA92C99A999E5D9BCAD94406A030BDF06B192F4B6C1E9AEA8C9F068C27B417C48810922D2707345317C93E7C8A23953BE62EB832796F91E56D9BE478E2C9935AE111BEA437419DF880B8A75BBE");//cookieName为要写入的Cookie的名称
+    // document.cookie = "CHYJRTGN_APP1=" + escape("C3956733D321FCF621FAE43E7213B809C43D05C4916A1AD06D608727832C26C20123816B03008EA28C39851E67C37C03B9D7D778D0011B190C0FE6AC6EFF4BF0063D5E292F54A163F323070078C5580FD8544BDD4B51D09E");//cookieName为要写入的Cookie的名称
     //tokenKey
-    document.cookie = "CacheKey_APP1=" + escape("61502EADEDFE49FA06173077B258C0745155A3952131860A334BD7FE46F8A5E6C9E766FB48DAF6560CEA3DBD574CB4E09741490C6F1B9473");//cookieName为要写入的Cookie的名称
+    // document.cookie = "CacheKey_APP1=" + escape("61502EADEDFE49FA2A09CB9B0F3B519E94B447FE284697B233C2323A3C1AAD3603BC0532369A0E674C411F64F98CE3F74E1DD9252A901A27");//cookieName为要写入的Cookie的名称
 
     //获取企业版传过来的token 和tokenkey
 
@@ -42,8 +43,8 @@ require(['jquery', 'bundle', 'moment', 'lodash'], function ($, bundle, moment, l
         "data": {
             "token":token,
             "tokenKey":tokenKey,
-            "jobid":"42",
-            "PhxID":"p1570002"
+            "jobid": jobid,
+            "PhxID": PhxID
         }
     }
 
@@ -126,15 +127,22 @@ require(['jquery', 'bundle', 'moment', 'lodash'], function ($, bundle, moment, l
 
             }else {
                 $('#loadingzzz').show();
+                layer.open({
+                    content: JSON.stringify(data.returnMsg),
+                    skin: 'msg',
+                    style: 'font-size: 0.16rem',
+                    shade: 'background-color: rgba(0,0,0,.3)',
+                    time: 2
+                });
             }
         }
     });
 
     function saveIterview(){
         //职位编号
-        const jobid = $("#jobid").val();
+        // const jobid = $("#jobid").val();
         //应聘者环信id
-        const PhxID = $("#PhxID").val();
+        // const PhxID = $("#PhxID").val();
         //职位名称
         const jobname = $("#jobname").text();
         //面试时间
@@ -158,7 +166,7 @@ require(['jquery', 'bundle', 'moment', 'lodash'], function ($, bundle, moment, l
                 "jobid":jobid,
                 "PhxID": PhxID,
                 "jobname": jobname,
-                "interviewtime": interviewtime,
+                "interviewtime": interviewtime.replace("T"," "),
                 "cphone": cphone,
                 "address": address,
                 "remarks": remarks
@@ -173,9 +181,25 @@ require(['jquery', 'bundle', 'moment', 'lodash'], function ($, bundle, moment, l
             data: JSON.stringify(saveInterviewJson),
             dataType: "json",
             success:function(data){
+                console.log(data)
                 if(data.returnCode == "AAAAAAA"){
+                    layer.open({
+                        content: '发送成功',
+                        skin: 'msg',
+                        style: 'font-size: 0.16rem',
+                        shade: 'background-color: rgba(0,0,0,.3)',
+                        time: 2
+                    });
                     var str = "{\"data\":{\"corpname\":\""+data.data.corpname+"\",\"address\":\""+data.data.address+"\",\"interviewtime\":\""+data.data.interviewtime+"\",\"inteid\":\""+data.data.inteid+"\"}}";
                     window.location.href+="&"+str;
+                }else {
+                    layer.open({
+                        content: JSON.stringify(data.returnMsg),
+                        skin: 'msg',
+                        style: 'font-size: 0.16rem',
+                        shade: 'background-color: rgba(0,0,0,.3)',
+                        time: 2
+                    });
                 }
             },
             error: function(xhr,status,error){

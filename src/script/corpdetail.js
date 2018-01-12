@@ -5,16 +5,16 @@ require.config({
     paths: {
         "jquery": "jquery.min",
         "bundle": "bundle",
-        "tinybox": "tinybox",
-        "lodash": "lodash.min"
+        "lodash": "lodash.min",
+        "layer": "layer"
     }
 });
-require(['jquery', 'bundle', 'tinybox', 'lodash'], function ($, bundle, tinybox, lodash){
+require(['jquery', 'bundle', 'lodash', 'layer'], function ($, bundle, lodash, layer){
     // some code here
     //token
-    document.cookie = "CHYJRTGN_APP1=" + escape("5ED53C43A0D4DFE8D05D05AE2E1B5B57E19D534256418149450F00AEDCA86E86B0DDCAB78C77429E8C317EC352C4620DF83E5F86B889287367A5030CFCB54AFEE4770AC667346FB97E192F5B9914091A274069DF1E2D3445");//cookieName为要写入的Cookie的名称
+    // document.cookie = "CHYJRTGN_APP1=" + escape("5ED53C43A0D4DFE8D05D05AE2E1B5B57E19D534256418149450F00AEDCA86E86B0DDCAB78C77429E8C317EC352C4620DF83E5F86B889287367A5030CFCB54AFEE4770AC667346FB97E192F5B9914091A274069DF1E2D3445");//cookieName为要写入的Cookie的名称
     //tokenKey
-    document.cookie = "CacheKey_APP1=" + escape("61502EADEDFE49FAAB992EF4E88185DCC82B4A71B8880EAA83388BE54553B66025850646AAE8039E1CD705E5DAFFCEC7D01F4DBCB4D3A116");//cookieName为要写入的Cookie的名称
+    // document.cookie = "CacheKey_APP1=" + escape("61502EADEDFE49FAAB992EF4E88185DCC82B4A71B8880EAA83388BE54553B66025850646AAE8039E1CD705E5DAFFCEC7D01F4DBCB4D3A116");//cookieName为要写入的Cookie的名称
 
     /**
      获取企业版传过来的token 和tokenkey
@@ -51,7 +51,15 @@ require(['jquery', 'bundle', 'tinybox', 'lodash'], function ($, bundle, tinybox,
 
             },
             error: function (data) {
-                TINY.box.show(JSON.stringify(data),0,0,0,0,3);
+                $("#loadingzzz").hide();
+                //提示
+                layer.open({
+                    content: data,
+                    skin: 'msg',
+                    style: 'font-size: 0.16rem',
+                    shade: 'background-color: rgba(0,0,0,.3)',
+                    time: 2 //2秒后自动关闭
+                });
             }
         });
     }
@@ -76,7 +84,6 @@ require(['jquery', 'bundle', 'tinybox', 'lodash'], function ($, bundle, tinybox,
             console.log(xhr,status,error)
         },
         success: function (data) {
-            console.log(data)
             if(data.returnCode == "AAAAAAA") {
                 $('#loadingzzz').hide();
                 const corpinfo = data.data.corpinfo;
@@ -240,7 +247,13 @@ require(['jquery', 'bundle', 'tinybox', 'lodash'], function ($, bundle, tinybox,
                 }
             } else {
                 $('#loadingzzz').show();
-                TINY.box.show(JSON.stringify(data.returnMsg),0,0,0,0,3);
+                layer.open({
+                    content: JSON.stringify(data.returnMsg),
+                    skin: 'msg',
+                    style: 'font-size: 0.16rem',
+                    shade: 'background-color: rgba(0,0,0,.3)',
+                    time: 2
+                });
             }
         }
     })

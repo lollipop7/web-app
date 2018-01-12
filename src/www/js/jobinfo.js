@@ -6,15 +6,15 @@ require.config({
         "jquery": "jquery.min",
         "bundle": "bundle",
         "lodash": "lodash.min",
-        "tinybox": "tinybox"
+        "layer": "layer"
     }
 });
-require(['jquery', 'bundle', 'lodash', 'tinybox'], function ($, bundle, lodash, tinybox) {
+require(['jquery', 'bundle', 'lodash', 'layer'], function ($, bundle, lodash, layer) {
     // some code here
     //token
-    document.cookie = "CHYJRTGN_APP1=" + escape("5ED53C43A0D4DFE8D05D05AE2E1B5B57E19D534256418149450F00AEDCA86E86B0DDCAB78C77429E8C317EC352C4620DF83E5F86B889287367A5030CFCB54AFEE4770AC667346FB97E192F5B9914091A274069DF1E2D3445"); //cookieName为要写入的Cookie的名称
+    // document.cookie = "CHYJRTGN_APP1=" + escape("5ED53C43A0D4DFE8D05D05AE2E1B5B57E19D534256418149450F00AEDCA86E86B0DDCAB78C77429E8C317EC352C4620DF83E5F86B889287367A5030CFCB54AFEE4770AC667346FB97E192F5B9914091A274069DF1E2D3445");//cookieName为要写入的Cookie的名称
     //tokenKey
-    document.cookie = "CacheKey_APP1=" + escape("61502EADEDFE49FAAB992EF4E88185DCC82B4A71B8880EAA83388BE54553B66025850646AAE8039E1CD705E5DAFFCEC7D01F4DBCB4D3A116"); //cookieName为要写入的Cookie的名称
+    // document.cookie = "CacheKey_APP1=" + escape("61502EADEDFE49FAAB992EF4E88185DCC82B4A71B8880EAA83388BE54553B66025850646AAE8039E1CD705E5DAFFCEC7D01F4DBCB4D3A116");//cookieName为要写入的Cookie的名称
 
     /**
      获取企业版传过来的token 和tokenkey
@@ -53,7 +53,13 @@ require(['jquery', 'bundle', 'lodash', 'tinybox'], function ($, bundle, lodash, 
             success: function (data) {},
             error: function (data) {
                 $("#loadingzzz").hide();
-                TINY.box.show(JSON.stringify(data), 0, 0, 0, 0, 3);
+                layer.open({
+                    content: data,
+                    skin: 'msg',
+                    style: 'font-size: 0.16rem',
+                    shade: 'background-color: rgba(0,0,0,.3)',
+                    time: 2
+                });
             }
         });
     }
@@ -175,14 +181,18 @@ require(['jquery', 'bundle', 'lodash', 'tinybox'], function ($, bundle, lodash, 
                 scope ? $('#size').text(scope) : $('#size').text('不详');
 
                 let wealRlt = '';
-                _.forEach(weal, (item, index) => {
-                    wealRlt += `
+                if (wealRlt != null) {
+                    _.forEach(weal, (item, index) => {
+                        wealRlt += `
                         <div class="inline-block">
                             ${item}
                         </div> 
                     `;
-                });
-                $('#benifit').empty().append(wealRlt);
+                    });
+                    $('#benifit').empty().append(wealRlt);
+                } else {
+                    $('#benifit').hide();
+                }
 
                 //工资
                 salary ? $('#salary').text(salary) : $('#salary').text('面议');
@@ -298,7 +308,13 @@ require(['jquery', 'bundle', 'lodash', 'tinybox'], function ($, bundle, lodash, 
                 }
             } else {
                 $('#loadingzzz').show();
-                TINY.box.show(JSON.stringify(data), 0, 0, 0, 0, 3);
+                layer.open({
+                    content: JSON.stringify(data.returnMsg),
+                    skin: 'msg',
+                    style: 'font-size: 0.16rem',
+                    shade: 'background-color: rgba(0,0,0,.3)',
+                    time: 2
+                });
             }
         }
     });
