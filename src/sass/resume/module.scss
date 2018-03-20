@@ -7,9 +7,11 @@
     font-size: 0;
     .profile {
       margin: 0 auto;
-      width: 0.5rem;
-      height: 0.5rem;
+      width: 0.9rem;
+      height: 0.9rem;
       background-color: #d7d7d7;
+      background-repeat: no-repeat;
+      background-size: cover;
       border-radius: 50%;
     }
     h2 {

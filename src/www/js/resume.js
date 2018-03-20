@@ -129,7 +129,7 @@ require(['jquery', 'lodash', 'bundle', 'layer'], function ($, _, bundle, layer) 
                 let proReuslt = "";
                 if (prodata != "") {
                     _.forEach(JSON.parse(prodata), function (item, index) {
-                        proReuslt += `<div class="prog-box"><div class="prog-name">${item.projectname}</div><div class="proj-time"><span class="from">${item.starttime}</span> <b>-</b> <span class="to">${item.endtime}</span></div> <div class="proj-content">${item.projectremark}</div></div>`;
+                        proReuslt += `<div class="prog-box"><div class="prog-name">${item.projectname}</div><div class="proj-time"><span class="from">${item.starttime}</span> <b>-</b> <span class="to">${item.endtime}</span></div> <div class="proj-content"><p>${item.projectremark}</p></div></div>`;
                     });
                     $('.prog-box').remove();
                     $('#mypro').append(proReuslt);

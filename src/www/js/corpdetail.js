@@ -131,7 +131,7 @@ require(['jquery', 'bundle', 'lodash', 'layer'], function ($, bundle, lodash, la
                 $('#corp-industry').text(industry ? industry : '不详');
 
                 //公司简介
-                description ? ($('#intro-brief').append(description.substr(0, 60)), $('#intro-brief').append(`<span class='intro-none'>${description.substr(60)}</span>`)) : $('#intro-brief').text('该公司还没有简介。');
+                description ? ($('#intro-brief').append(description.substr(0, 60)), $('#intro-brief').append(`<span class='intro-none'>${description.substr(60)}</span>`)) : ($('#intro-brief').text('该公司还没有简介。'), $('#show-more').hide());
 
                 let isShowMore = true;
                 $("#show-more").click(function () {

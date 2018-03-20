@@ -28,12 +28,17 @@
         height: 100%;
       }
     }
-    p {
-      margin-bottom: 0.24rem;
-      line-height: 0.24rem;
-      font-family: PingFangSC-Regular;
-      font-size: 0.16rem;
-      color: #656565;
+    .mobile-text {
+      img {
+        display: none !important;
+      }
+      p {
+        margin-bottom: 0.24rem;
+        line-height: 0.24rem;
+        font-family: PingFangSC-Regular;
+        font-size: 0.16rem;
+        color: #656565;
+      }
     }
   }
 }

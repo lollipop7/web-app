@@ -147,7 +147,8 @@ require(['jquery', 'bundle', 'lodash', 'layer'], function ($, bundle, lodash, la
                     $('#intro-brief').append(description.substr(0, 60)),
                     $('#intro-brief').append(`<span class='intro-none'>${description.substr(60)}</span>`)
                 ) : (
-                    $('#intro-brief').text('该公司还没有简介。')
+                    $('#intro-brief').text('该公司还没有简介。'),
+                    $('#show-more').hide()
                 );
 
                 let isShowMore = true ;
